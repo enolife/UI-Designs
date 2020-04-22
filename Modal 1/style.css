@@ -30,7 +30,7 @@ a {
     background: #fff;
     border-radius: 9px;
     width: 90%;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px 20px 70px;
 }
@@ -50,6 +50,17 @@ a {
 
 }
 
+/* Make icon lighter/Thinner */
+.fa-times {
+    -webkit-text-stroke: 1.5px #ffffff;
+    font-size: 1.3rem;
+}
+
+.fa-arrow-left {
+    -webkit-text-stroke: .5px #eaeaea;
+}
+
+
 .modal-content_cont {
     width: 80%;
     margin: 0 auto;
@@ -58,11 +69,13 @@ a {
 }
 
 .modal-content_cont p {
-    font-size: .85rem;
+    font-size: .8rem;
+    line-height: 1.5;
+    width: 90%;
 }
 
 .modal-content_cont h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .modal-content_cont h3 {
@@ -71,12 +84,12 @@ a {
 }
 
 input {
-    border: 1px solid #c9c9ca;
+    border: 1px solid #d5d5e2;
     border-radius: 5px;
     display: block;
     margin-bottom: 50px;
     width: 100%;
-    height: 2.7rem;
+    height: 2.6rem;
     padding: 15px;
     outline: none;
 }
@@ -84,9 +97,10 @@ input {
 .modal-content_cont .btn {
     border-radius: 4px;
     display: inline-block;
+    font-size: .9rem;
+    font-weight: bold;
     padding: .8em 2.5em;
     text-align: center;
-    font-weight: bold;
 }
 
 .modal-content_cont .btn-continue {
