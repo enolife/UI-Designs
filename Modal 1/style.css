@@ -25,7 +25,6 @@ a {
     height: 100vh;
 }
 
-
 .modal-container {
     background: #fff;
     border-radius: 9px;
@@ -44,13 +43,14 @@ a {
 }
 
 .fa-arrow-left {
-    padding: 8px 10px;
+    padding: 7px 8px;
     background: #eaeaea;
     border-radius: 3px;
-
 }
 
+
 /* Make icon lighter/Thinner */
+
 .fa-times {
     -webkit-text-stroke: 1.5px #ffffff;
     font-size: 1.3rem;
@@ -60,6 +60,18 @@ a {
     -webkit-text-stroke: .5px #eaeaea;
 }
 
+
+/* Make icon lighter/Thinner end */
+
+.fa-times:hover {
+    font-size: 1.5rem;
+    color: #930705;
+}
+
+.fa-arrow-left:hover {
+    -webkit-text-stroke: .5px #d3d2d2;
+    background: #d3d2d2;
+}
 
 .modal-content_cont {
     width: 80%;
@@ -94,6 +106,14 @@ input {
     outline: none;
 }
 
+input:focus {
+    box-shadow: 0 1px 5px 0 rgba(32, 33, 36, 0.28);
+}
+
+::placeholder {
+    color: #9d9db6;
+}
+
 .modal-content_cont .btn {
     border-radius: 4px;
     display: inline-block;
@@ -108,7 +128,47 @@ input {
     color: #fff;
 }
 
+.modal-content_cont .btn-continue:hover {
+    background: #930705;
+}
+
 .modal-content_cont .btn-cancel {
     background: transparent;
     color: #81838D;
+}
+
+.modal-content_cont .btn-cancel:hover {
+    background: #81838D;
+    color: #fff;
+}
+
+
+/* Media Query */
+
+@media (max-width: 443px) {
+    .modal-container {
+        padding: 20px 20px 45px;
+    }
+
+    input {
+        height: 2.45rem;
+    }
+
+    .modal-content_cont .btn {
+        padding: .6em .9em;
+    }
+
+    .modal-content_cont .btn-continue {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 325px) {
+    .modal-content_cont .btn {
+        padding: .55em .8em;
+    }
+
+    .modal-content_cont .btn-continue {
+        margin-right: 4px;
+    }
 }
