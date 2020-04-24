@@ -12,4 +12,96 @@ body {
     font-family: 'Muli', sans-serif;
     margin: 0;
     background: #ECEEF7;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background: #10182F;
+    padding: 90px 70px 0;
+    position: relative;
+    color: #A2AED2;
+    top: 50%;
+}
+
+.logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.logo .fa-water {
+    margin-right: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+.upper-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+}
+
+ul span {
+    display: block;
+    margin-bottom: 25px;
+}
+
+span {
+    font-weight: 600;
+}
+
+.upper-footer li {
+    line-height: 2.5;
+}
+
+.social-media {
+    margin: 1em 0;
+}
+
+.social-media p {
+    width: 80%;
+    line-height: 1.8;
+}
+
+.icons-container {
+    display: flex;
+}
+
+.icons-container i {
+    font-size: 1.3rem;
+    margin-right: 43px;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.icons-container i:hover {
+    opacity: 1;
+}
+
+footer hr {
+    border: .5px solid #A2AED2;
+    opacity: 0.2;
+}
+
+.lower-footer {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.center-text {
+    display: flex;
+}
+
+.center-text li {
+    margin-right: 65px;
 }
