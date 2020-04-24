@@ -11,4 +11,134 @@ html {
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
+    background: #ECEEF7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.modal-container {
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: #A6B0DC 0 9px 58px -14px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 25px 70px;
+}
+
+.top-icons_cont {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: end;
+    align-items: center;
+}
+
+.missed-icon {
+    display: inline-block;
+    width: 1.6rem;
+    height: auto;
+    margin: 0 10px 0 10px;
+}
+
+.round-wrapper {
+    padding: 8px 12px;
+    border: 1px solid #CFD1D7;
+    color: #CFD1D7;
+    font-size: 1.5rem;
+    border-radius: 100vh;
+    -webkit-text-stroke: 1.5px #fff;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 80%;
+    margin: 0 auto 25px;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+
+.image-wrapper {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100vh;
+    background: #ECEEF7;
+    display: grid;
+    place-items: center;
+
+}
+
+.caller-image {
+    width: 5rem;
+    height: auto;
+}
+
+.text-container {
+    color: #20273D;
+    display: grid;
+    align-content: center;
+
+}
+
+.info-text {
+    margin: 20px 0 0;
+}
+
+.info-text,
+.call-time {
+    font-weight: 600;
+}
+
+.caller-name {
+    font-weight: 900;
+    font-size: 1.13rem;
+    margin: 4px 0 10px;
+}
+
+.call-time {
+    font-size: .8rem;
+    margin: 0;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    border-radius: 4px;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .9em 1.6em;
+    text-align: center;
+}
+
+.btn-send {
+    border: 1px solid #CFD1D7;
+    color: #72747C;
+}
+
+.btn-call {
+    background: #1BA371;
+    box-shadow: #0E9688 0 9px 16px -5px;
+    color: #fff;
+    padding: .9em 3em;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1rem;
 }
