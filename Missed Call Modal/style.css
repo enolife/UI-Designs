@@ -22,7 +22,7 @@ a {
 .main-container {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 85vh;
 }
 
 .modal-container {
