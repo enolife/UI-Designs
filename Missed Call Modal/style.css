@@ -42,6 +42,12 @@ a {
     align-items: center;
 }
 
+.round-wrapper:hover {
+    font-size: 1.6rem;
+    padding: 7.5px 11px;
+    color: #d23c3c;
+}
+
 .missed-icon {
     display: inline-block;
     width: 1.6rem;
@@ -119,16 +125,22 @@ a {
 
 .btn {
     border-radius: 4px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: .8rem;
     font-weight: 600;
     padding: .9em 1.6em;
     text-align: center;
+    white-space: nowrap;
 }
 
 .btn-send {
     border: 1px solid #CFD1D7;
     color: #72747C;
+}
+
+.btn-send:hover {
+    background: #ECEEF7;
 }
 
 .btn-call {
@@ -138,7 +150,74 @@ a {
     padding: .9em 3em;
 }
 
+.btn-call:hover {
+    opacity: 0.8;
+}
+
 .btn i {
     margin-right: 10px;
     font-size: 1rem;
+}
+
+/* Media Query */
+
+@media (max-width: 507px) {
+    .modal-container {
+        padding: 10px 18px 70px;
+    }
+
+    .missed-icon {
+        display: inline-block;
+        width: 1.4rem;
+    }
+
+    .round-wrapper {
+        padding: 4px 8px;
+    }
+
+    .round-wrapper:hover {
+        padding: 3.5px 7.4px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .btn {
+        padding: .8em .9em;
+    }
+
+    .btn-call {
+        padding: 0em 2.2em;
+    }
+}
+
+@media (max-width: 432px) {
+    .btn-container {
+        width: 95%;
+    }
+
+    .btn {
+        padding: .8em .5em;
+    }
+
+    .btn-call {
+        padding: 0em 1.8em;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .btn {
+        padding: .8em .3em;
+    }
+
+    .btn-call {
+        padding: 0em 1.4em;
+    }
+
+    .btn i {
+        margin-right: 5px;
+        font-size: 1rem;
+    }
 }
