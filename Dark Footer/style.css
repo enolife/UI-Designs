@@ -22,6 +22,7 @@ a {
 
 footer {
     background: #10182F;
+    font-size: 1rem;
     padding: 90px 70px 0;
     position: relative;
     color: #A2AED2;
@@ -55,8 +56,12 @@ ul span {
     margin-bottom: 25px;
 }
 
+footer a:hover {
+    color: #d4d9ec
+}
+
 span {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .upper-footer li {
@@ -118,13 +123,12 @@ ul.lang {
     justify-items: end;
 }
 
+
 /* Media Query */
 
-
 @media (max-width: 936px) {
-
-    .social-media {
-        padding-inline-start: 40px;
+    footer {
+        padding: 90px 20px 0;
     }
 
     .social-media p {
@@ -137,9 +141,12 @@ ul.lang {
 }
 
 @media (max-width: 540px) {
-
     footer {
-        padding: 50px 10px 0;
+        padding: 10px 18px 0;
+    }
+
+    .logo {
+        margin-left: 0;
     }
 
     .upper-footer {
@@ -150,8 +157,12 @@ ul.lang {
         font-size: .9rem;
     }
 
+    footer ul {
+        padding-inline-start: 0;
+    }
+
     .upper-footer li {
-        line-height: 2;
+        line-height: 1.7;
     }
 
     .icons-container i {
@@ -159,9 +170,6 @@ ul.lang {
     }
 
     .lower-footer {
-
         font-size: .75rem;
     }
-
-
 }
