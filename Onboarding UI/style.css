@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background: #D1E2FF;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border: 1px solid red;
+    width: 60%;
+    margin: 80px auto 0;
+}
+
+.ui {
+    border-radius: 10px;
+    background: #fff;
+    padding: 50px 0;
+}
