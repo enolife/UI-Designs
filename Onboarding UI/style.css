@@ -137,12 +137,19 @@ a {
     margin-right: 3px;
 }
 
+.skip-btn:hover {
+    background: #a2acbd86;
+}
+
 .next-btn {
     background: #445DCB;
     color: #fff;
     font-weight: bold;
 }
 
+.next-btn:hover {
+    background: rgb(44, 67, 168);
+}
 
 /* Media Query */
 
@@ -164,11 +171,21 @@ a {
     }
 
     .btn-container {
-        display: flex;
         width: 85%;
     }
 
     .btn {
         padding: 12px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-container {
+        margin: 25px auto 0;
+        width: 85%;
+    }
+
+    .btn-container {
+        width: 75%;
     }
 }
