@@ -181,7 +181,7 @@ a {
 
 @media (max-width: 400px) {
     .main-container {
-        margin: 25px auto 0;
+        margin: 25px auto;
         width: 85%;
     }
 
