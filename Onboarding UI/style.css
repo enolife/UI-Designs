@@ -99,7 +99,7 @@ h3 {
 
 .slide-indicator {
     display: inline-block;
-    width: .38rem;
+    width: .37rem;
     height: .40rem;
     border-radius: 8px;
     background: #cecece;
@@ -107,7 +107,7 @@ h3 {
 
 .slide-indicator div {
     width: .37rem;
-    height: .41rem;
+    height: .40rem;
     border-radius: 5px;
     background: #445DCB;
     display: block;
