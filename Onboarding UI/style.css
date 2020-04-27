@@ -162,8 +162,9 @@ a {
 
 @media (max-width: 752px) {
     .main-container {
-        gap: 10px;
-        width: 95%;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        width: 90%;
     }
 
     .body-text {
@@ -179,9 +180,16 @@ a {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 534px) {
     .main-container {
         margin: 25px auto;
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .main-container {
         width: 85%;
     }
 
