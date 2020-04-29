@@ -172,6 +172,7 @@ svg {
 
     .cards-container {
         padding: 20px 15px;
+        grid-gap: 0;
     }
 
     .card {
