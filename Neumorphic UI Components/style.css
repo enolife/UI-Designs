@@ -124,7 +124,8 @@ svg {
     border: 0;
     border-radius: 50px;
     padding: 20px 15px;
-    width: 47%
+    width: 47%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn:focus {
