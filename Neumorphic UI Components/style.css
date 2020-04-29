@@ -14,6 +14,53 @@ body {
 }
 
 main {
-    width: 70%;
-    max-width: 700px;
+    width: 95%;
+    max-width: 500px;
+    border: 1px solid red;
+    margin: 100px auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+    place-items: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+.card {
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 18px;
+    display: grid;
+    place-items: center;
+}
+
+.icon-wrapper {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 100vh;
+    margin-bottom: 10px;
+}
+
+.red-wrapper {
+    background: #FB7070;
+}
+
+.yellow-wrapper {
+    background: #FBAA70;
+}
+
+.indigo-wrapper {
+    background: #7F7AFD;
+}
+
+.card-text {
+    font-size: .78rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
 }
