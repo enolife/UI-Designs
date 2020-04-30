@@ -52,9 +52,6 @@ main {
 
 .card:hover svg {
     transform: rotateY(180deg);
-}
-
-svg {
     transition: 0.7s;
     transform-style: preserve-3d;
 }
