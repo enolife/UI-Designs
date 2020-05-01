@@ -131,6 +131,7 @@ a {
 .btn {
     padding: 13px 33px;
     border-radius: 50px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .skip-btn {
