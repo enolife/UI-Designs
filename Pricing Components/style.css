@@ -42,6 +42,54 @@ header h2 {
     font-weight: 900;
 }
 
+.left-content label {
+    display: flex;
+    width: 12rem;
+    padding: 22px 0;
+    border-radius: 50px;
+    background: rgb(212, 217, 224);
+    position: relative;
+    align-items: center;
+}
+
+label p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.monthly {
+    left: 1.2rem;
+    position: absolute;
+}
+
+.yearly {
+    right: 1.65rem;
+    position: absolute;
+}
+
+
+
+.toggler {
+    position: absolute;
+    padding: 20px 45px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 15px 9px -12px rgba(114, 126, 141, 0.829);
+    transition: all .8s ease;
+
+}
+
+input[type=checkbox] {
+    width: 0;
+    border: 0;
+    height: 0;
+}
+
+input[type=checkbox]:checked+.toggler {
+    transform: translateX(92px);
+}
+
 .pricing-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -155,7 +203,7 @@ header h2 {
 @media (max-width: 618px) {
 
     header h2 {
-        font-size: 1.7rem;
+        font-size: 1.55rem;
     }
 
     main {
@@ -169,6 +217,10 @@ header h2 {
 }
 
 @media (max-width: 420px) {
+    header h2 {
+        font-size: 1.4rem;
+    }
+
     main {
         width: 85%;
     }
