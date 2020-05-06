@@ -1,3 +1,7 @@
+:root {
+    --dark-grey: coral;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -9,7 +13,193 @@ html {
 }
 
 body {
+    color: rgba(7, 8, 35, 1);
     font-family: 'Muli', sans-serif;
     margin: 0;
     background: #ebeef2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    width: 95%;
+    max-width: 850px;
+    margin: 7% auto 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.starter-card,
+.professional-card {
+    background: #fff;
+    padding: 15px 45px 45px;
+    box-shadow: 0 19px 49px -20px rgba(134, 147, 164, 0.699);
+}
+
+.pricing-cards h3 {
+    font-size: 1.7rem;
+}
+
+.pricing-cards .price {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.pricing-cards h3,
+.pricing-cards .price,
+.billed-text {
+    font-weight: 700;
+}
+
+.billed-text {
+    font-size: 1.13rem;
+    margin: 0 0 30px 0;
+}
+
+.billed-text,
+.card-description {
+    opacity: 0.85;
+
+}
+
+.card-description {
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.desc-1 {
+    margin-bottom: 40px;
+}
+
+.desc-2 {
+    margin-bottom: 3.95rem;
+}
+
+.btn {
+    border-radius: 6px;
+    display: flex;
+    font-size: 1.13rem;
+    padding: 18px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.black-btn {
+    background: #000;
+    color: #fff;
+}
+
+.white-btn {
+    background: #fff;
+    color: #000;
+    border: 1.5px solid rgba(61, 61, 61, 0.575);
+}
+
+
+@media (max-width: 825px) {
+
+    header h2 {
+        font-size: 1.9rem;
+    }
+
+    .pricing-cards {
+        grid-gap: 15px;
+    }
+
+    .pricing-cards h3 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-cards .price {
+        font-size: 1.15rem;
+
+    }
+
+    .billed-text {
+        font-size: .9rem;
+    }
+
+    .starter-card,
+    .professional-card {
+        padding: 5px 35px 35px;
+    }
+
+    .card-description {
+        font-size: .9rem;
+    }
+
+    .btn {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 618px) {
+
+    header h2 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        width: 65%;
+        padding-bottom: 40px;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        width: 85%;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-cards h3 {
+        font-size: 1.3rem;
+    }
+
+    .pricing-cards .price {
+        font-size: 1rem;
+    }
+
+    .billed-text {
+        font-size: .85rem;
+    }
+
+    .starter-card,
+    .professional-card {
+        padding: 5px 25px 35px;
+    }
+
+    .card-description {
+        font-size: .8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
 }
