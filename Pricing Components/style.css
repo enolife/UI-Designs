@@ -68,8 +68,6 @@ label p {
     position: absolute;
 }
 
-
-
 .toggler {
     position: absolute;
     padding: 20px 45px;
@@ -78,7 +76,6 @@ label p {
     border-radius: 50px;
     box-shadow: 0 15px 9px -12px rgba(114, 126, 141, 0.829);
     transition: all .6s ease;
-
 }
 
 input[type=checkbox] {
@@ -127,7 +124,6 @@ input[type=checkbox]:checked+.toggler {
 .billed-text,
 .card-description {
     opacity: 0.85;
-
 }
 
 .card-description {
@@ -164,9 +160,7 @@ input[type=checkbox]:checked+.toggler {
     border: 1.5px solid rgba(61, 61, 61, 0.575);
 }
 
-
 @media (max-width: 825px) {
-
     header h2 {
         font-size: 1.9rem;
     }
@@ -206,7 +200,6 @@ input[type=checkbox]:checked+.toggler {
 
     .pricing-cards .price {
         font-size: 1.15rem;
-
     }
 
     .billed-text {
@@ -228,7 +221,6 @@ input[type=checkbox]:checked+.toggler {
 }
 
 @media (max-width: 618px) {
-
     header h2 {
         font-size: 1.55rem;
     }
@@ -250,6 +242,10 @@ input[type=checkbox]:checked+.toggler {
 
     main {
         width: 85%;
+    }
+
+    .left-content label {
+        margin-left: 5px;
     }
 
     .pricing-cards {
@@ -274,7 +270,7 @@ input[type=checkbox]:checked+.toggler {
     }
 
     .card-description {
-        font-size: .8rem;
+        font-size: .85rem;
     }
 
     .btn {
