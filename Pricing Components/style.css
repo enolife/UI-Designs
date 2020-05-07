@@ -68,14 +68,20 @@ label p {
     position: absolute;
 }
 
+.monthly,
+.yearly {
+    cursor: pointer;
+}
+
 .toggler {
     position: absolute;
     padding: 20px 45px;
     margin: 0 5px;
     background: #fff;
     border-radius: 50px;
-    box-shadow: 0 15px 9px -12px rgba(114, 126, 141, 0.829);
+    box-shadow: 0 15px 4px -13px rgba(114, 126, 141, 0.52);
     transition: all .6s ease;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -147,6 +153,7 @@ input[type=checkbox]:checked+.toggler {
     padding: 18px 0;
     width: 100%;
     justify-content: center;
+    cursor: pointer;
 }
 
 .black-btn {
@@ -154,11 +161,23 @@ input[type=checkbox]:checked+.toggler {
     color: #fff;
 }
 
+.black-btn:hover {
+    opacity: .75;
+}
+
 .white-btn {
     background: #fff;
     color: #000;
     border: 1.5px solid rgba(61, 61, 61, 0.575);
 }
+
+.white-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 825px) {
     header h2 {
