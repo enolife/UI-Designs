@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background: hsl(220, 50%, 98%);
+}
+
+main {
+    width: 90%;
+    max-width: 880px;
+    margin: 50px auto 0;
+    padding: 30px 0;
+
+}
+
+header {
+    text-align: center;
+}
+
+.upper-content {
+    width: 60%;
+    margin: 0 auto 4rem;
+}
+
+.input-search-cont {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.input-search-cont input {
+    display: flex;
+    align-content: center;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 0 0 62px;
+    width: 100%;
+    height: 55px;
+    outline: 0;
+    box-shadow: 0 9px 10px -4px rgba(201, 214, 239, 0.342);
+}
+
+.input-search-cont input:hover {
+    box-shadow: 0 9px 10px -4px rgba(161, 172, 192, 0.411);
+}
+
+::placeholder {
+    color: #828d97;
+    font-size: .95rem;
+    padding-left: 6px;
+    display: block;
+}
+
+.input-search-cont svg {
+    position: absolute;
+    top: 1px;
+    left: 1.2rem;
+}
+
+details {
+    padding: 17px 0;
+}
+
+details p {
+    opacity: .75;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+summary {
+    display: flex;
+    font-size: 1.1rem;
+    color: hsl(226, 35%, 19%);
+    align-content: center;
+    justify-content: space-between;
+    outline: 0;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary span {
+    margin-left: 20px;
+}
+
+summary span::after {
+    content: "";
+    display: block;
+    background: rgba(31, 30, 30, 0.5);
+    width: 0;
+    height: 2.1px;
+    margin: 5px 0 0;
+    -webkit-transition: ease-in-out 300ms;
+    transition: ease-in-out 300ms;
+}
+
+summary:hover span::after {
+    width: 50%;
+}
+
+
+summary svg {
+    right: 20px;
+    position: relative;
+}
+
+hr {
+    border: 1.1px solid rgba(211, 220, 236, 0.79);
+}
+
+/* Cards */
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px 15px 12px 12px;
+    box-shadow: 0 9px 8px -3px rgba(201, 214, 239, 0.452);
+}
+
+.card img {
+    width: 100%;
+    height: auto
+}
+
+.card span {
+    display: block;
+    font-size: .9rem;
+    color: hsl(226, 35%, 19%);
+    text-align: center;
+    padding: 8px 0 16px;
+}
