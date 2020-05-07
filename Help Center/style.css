@@ -156,6 +156,15 @@ hr {
 }
 
 
+/* Remove tap highlights */
+svg,
+summary,
+.card {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
 /* Media Query */
 
 @media (max-width: 860px) {
@@ -211,4 +220,5 @@ hr {
     .card span {
         font-size: .85rem;
     }
+
 }
