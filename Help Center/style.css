@@ -96,7 +96,7 @@ summary span {
 summary span::after {
     content: "";
     display: block;
-    background: rgba(31, 30, 30, 0.5);
+    background: rgba(104, 44, 44, 0.377);
     width: 0;
     height: 2.1px;
     margin: 5px 0 0;
