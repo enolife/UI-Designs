@@ -180,6 +180,14 @@ input[type=checkbox]:checked+.toggler {
     color: #fff;
 }
 
+/* fix tap highlights on mobile */
+.btn,
+.monthly,
+.yearly,
+.toggler {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 /* MEDIA QUERIES */
 
