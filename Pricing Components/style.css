@@ -80,8 +80,12 @@ label p {
     background: #fff;
     border-radius: 50px;
     box-shadow: 0 15px 4px -13px rgba(114, 126, 141, 0.52);
-    transition: all .6s ease;
+    transition: .6s ease;
     cursor: pointer;
+}
+
+.toggler:hover {
+    background: rgb(244, 246, 253);
 }
 
 input[type=checkbox] {
