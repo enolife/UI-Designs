@@ -19,7 +19,6 @@ main {
     max-width: 880px;
     margin: 50px auto 0;
     padding: 30px 0;
-
 }
 
 header {
@@ -63,6 +62,7 @@ header {
     position: absolute;
     top: 1px;
     left: 1.2rem;
+    cursor: pointer;
 }
 
 details {
@@ -108,7 +108,6 @@ summary:hover span::after {
     width: 50%;
 }
 
-
 summary svg {
     right: 20px;
     position: relative;
@@ -117,6 +116,7 @@ summary svg {
 hr {
     border: 1.1px solid rgba(211, 220, 236, 0.79);
 }
+
 
 /* Cards */
 
@@ -131,11 +131,16 @@ hr {
     background: #fff;
     border-radius: 15px 15px 12px 12px;
     box-shadow: 0 9px 8px -3px rgba(201, 214, 239, 0.452);
+    cursor: pointer;
 }
 
 .card img {
     width: 100%;
     height: auto
+}
+
+.card img:hover {
+    opacity: .8;
 }
 
 .card span {
@@ -144,4 +149,66 @@ hr {
     color: hsl(226, 35%, 19%);
     text-align: center;
     padding: 8px 0 16px;
+}
+
+.card:hover {
+    font-weight: 600;
+}
+
+
+/* Media Query */
+
+@media (max-width: 860px) {
+    .upper-content {
+        width: 75%;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        margin: 10px auto 0;
+    }
+
+    .upper-content {
+        width: 87%;
+    }
+
+    .input-search-cont input {
+        height: 47px;
+    }
+
+    .input-search-cont svg {
+        height: auto;
+        width: 30px;
+        top: 8.5px;
+    }
+
+    ::placeholder {
+        font-size: .78rem;
+    }
+
+    details {
+        padding: 4px 0;
+    }
+
+    summary span {
+        font-size: .96rem;
+        margin-left: 8px;
+    }
+
+    summary svg {
+        right: 8px;
+        position: relative;
+        width: 18px;
+        height: auto;
+    }
+
+    .cards-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .card span {
+        font-size: .85rem;
+    }
 }
