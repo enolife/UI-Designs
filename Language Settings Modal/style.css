@@ -106,3 +106,35 @@ hr {
     margin-top: 0;
     opacity: .9;
 }
+
+/* Media Query */
+
+@media (max-width: 420px) {
+    body {
+        font-size: .82rem;
+    }
+
+    .modal-container {
+        width: 90%;
+        margin: 30px auto 0;
+        padding: 1.5rem;
+    }
+
+    .upper-text h3,
+    .lower-text h3 {
+        font-size: 1rem;
+    }
+
+    .blue-text {
+        font-size: .7rem;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: flex;
+        line-height: 2.5;
+    }
+}
