@@ -14,17 +14,23 @@ body {
     color: hsl(246, 34%, 21%);
     margin: 0;
     background: linear-gradient(90deg, rgba(235, 201, 228, 1) 7%, rgba(244, 221, 212, 1) 29%, rgba(233, 206, 255, 1) 47%, rgba(244, 230, 255, 1) 85%, rgba(253, 245, 187, 1) 100%);
-    height: 100%
+    background: conic-gradient(#FFE1CE 0%, #E9CEFF 70%, #E9CEFF 0%, rgba(233, 206, 255, 0.74) 52%, #E9CEFF 43%, rgba(247, 207, 191, 0.62) 100%, #E9CEFF 56%, #E9CEFF 58%) 50% 50% / 100% 100%;
+
+}
+
+main {
+    height: 100vh;
+    padding-top: 95px;
 }
 
 .modal-container {
     background: #fff;
     width: 95%;
     max-width: 390px;
-    margin: 95px auto 0;
+    margin: 0 auto;
     padding: 2rem 2rem;
     border-radius: 8px;
-    box-shadow: 0 43px 53px -15px rgba(0, 13, 152, 0.151);
+    box-shadow: 0 43px 53px -15px rgba(0, 13, 152, 0.23);
 }
 
 .upper-text,
@@ -57,7 +63,11 @@ label {
     line-height: 2.9;
     align-items: center;
     width: fit-content;
-    opacity: .9;
+    color: hsla(0, 0%, 31%, 0.912);
+}
+
+label:hover {
+    color: hsl(0, 2%, 10%);
 }
 
 input,
@@ -111,13 +121,17 @@ hr {
 
 @media (max-width: 420px) {
     body {
-        font-size: .82rem;
+        font-size: .79rem;
+    }
+
+    main {
+        padding-top: 65px;
     }
 
     .modal-container {
-        width: 90%;
-        margin: 30px auto 0;
-        padding: 1.5rem;
+        width: 86%;
+        max-width: 330px;
+        padding: 1rem 1.5rem;
     }
 
     .upper-text h3,
@@ -135,6 +149,15 @@ hr {
 
     label {
         display: flex;
-        line-height: 2.5;
+        line-height: 2.6;
+    }
+
+    .radio-outline {
+        padding: 3px 3px;
+    }
+
+    input[type='radio'] {
+        height: .65rem;
+        width: .68rem;
     }
 }
