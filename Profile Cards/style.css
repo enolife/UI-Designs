@@ -32,7 +32,7 @@ main {
     padding: 33px 0;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 27px 24px -11px rgba(17, 13, 53, 0.37);
+    box-shadow: 0 27px 16px -11px rgba(17, 13, 53, 0.37);
 }
 
 .light-card::after {
@@ -110,7 +110,7 @@ main {
     padding: 25px 0 33px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 27px 24px -11px rgba(17, 13, 53, 0.315);
+    box-shadow: 0 27px 19px -11px rgba(17, 13, 53, 0.315);
 }
 
 .dark-card::after {
