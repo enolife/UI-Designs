@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(to right, rgb(133, 112, 216), rgb(49, 45, 111));
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(363px, auto));
+    gap: 3vw;
+    margin: 90px auto 0;
+    justify-content: center;
+    width: 90%;
+    max-width: 820px;
+    padding: 50px 0;
+}
+
+.light-card {
+    background: #fff;
+    padding: 33px 0;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 27px 24px -11px rgba(17, 13, 53, 0.37);
+}
+
+.light-card::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+}
+
+.light-card_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    padding: 0 23px;
+}
+
+.profile-picture {
+    width: 78px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.profile-picture:hover {
+    opacity: 0.75;
+}
+
+.light-card h3,
+.dark-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.light-card p {
+    color: hsl(240, 8%, 32%);
+}
+
+.dark-card p {
+    color: hsl(245, 21%, 68%);
+}
+
+.light-card p,
+.dark-card p {
+    font-size: .89rem;
+    margin-top: 4px;
+}
+
+.purple-text {
+    color: rgb(97, 65, 242)
+}
+
+.btn {
+    background: hsl(248, 93%, 65%);
+    border: 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: 0;
+    color: #fff;
+    display: block;
+    padding: 14px 0;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background: hsl(248, 95%, 61%);
+}
+
+.dark-card {
+    background: hsl(246, 35%, 16%);
+    color: #fff;
+    padding: 25px 0 33px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 27px 24px -11px rgba(17, 13, 53, 0.315);
+}
+
+.dark-card::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 50%;
+    border: 10px solid transparent;
+    border-left: 10px solid hsl(246, 35%, 16%);
+}
+
+.dark-card_content {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 7px;
+    padding: 0 23px;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 836px) {
+
+    main {
+        gap: 60px;
+        margin: 0 auto 0;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .dark-card {
+        padding: 20px 0 33px;
+    }
+
+    .light-card,
+    .dark-card {
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    .profile-picture {
+        width: 60px;
+    }
+
+    .light-card h3,
+    .dark-card h3 {
+        font-size: 1rem;
+    }
+
+    .light-card p,
+    .dark-card p {
+        font-size: .82rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+        padding: 11px 0;
+    }
+}
