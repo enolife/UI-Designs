@@ -538,6 +538,8 @@ ul {
 }
 
 
+
+/* MEDIA QUERY */
 @media (max-width: 1077px) {
     main {
         grid-template-columns: 1fr;
@@ -612,6 +614,31 @@ ul {
 
     main {
         width: 90%;
+    }
+
+    .status-bar {
+        font-size: .85rem;
+    }
+
+    .destination-top h2 {
+        font-size: 1.5rem;
+    }
+
+    .details-widget {
+        font-size: .95rem;
+    }
+
+    .details-widget h3 {
+        font-size: 1.7rem;
+    }
+
+    .toggler-checkbox {
+        padding: 7.5px 0;
+    }
+
+    .toggler {
+        padding: 9.5px;
+        transform: translateX(18.6px);
     }
 
     .middle {
