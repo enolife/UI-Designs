@@ -654,4 +654,10 @@ ul {
     .position-custom {
         left: -7.9rem;
     }
+
+    .back-btn {
+        height: 45px;
+        width: 33px;
+        top: 2.3rem;
+    }
 }
