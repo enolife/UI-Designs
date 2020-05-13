@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flight Booking App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script async src="./scripts/time.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="ui-wrapper_1">
+            <!-- First UI -->
+            <div class="ui ui-1">
+                <span class="image-container">
+                    <img src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589246697/boy-airplane-illust_cprugm.svg"
+                        alt="image illustration">
+                </span>
+                <h1 class="large-text">Love at First Flight</h1>
+                <div class="destination-wrapper">
+                    <div class="destination-from">
+                        <span class="destination-top_text">
+                            <img src="./assets/flight_takeoff-black-18dp.svg" alt="">
+                            <p>From</p>
+                        </span>
+                        <p class="destination-name">Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="destination-to">
+                        <span class="destination-top_text">
+                            <img src="./assets/flight_land-black-18dp.svg" alt="">
+                            <p>To</p>
+                        </span>
+                        <p class="destination-name">Changi, Singapore</p>
+                    </div>
+                </div>
+                <div class="round-button_container">
+                    <button class="btn black-btn">
+                        <img src="./assets/next-icon.svg" alt="">
+                        <p>Go</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Second UI -->
+        <section class="ui-wrapper_2">
+            <div class="ui ui-2">
+                <nav class="status-bar">
+                    <div id="time"></div>
+                    <ul class="status-bar_icons">
+                        <li>
+                            <img src="./assets/signal-edit.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/wifi-black-18dp.svg" alt="">
+                        </li>
+                        <li>
+                            <img class="battery-icon"
+                                src="https://res.cloudinary.com/dvhndpbun/image/upload/v1584276405/ios-battery-full_edit_gdwsvt.svg"
+                                alt="">
+                        </li>
+                    </ul>
+                </nav>
+                <article>
+
+                    <div class="curve-wrapper">
+                        <div>
+                            <img class="dp-24" src=" ./assets/flight_takeoff-black-18dp.svg" alt="">
+                        </div>
+                        <div>
+                            <!-- Dottee curve -->
+                            <svg class="curve" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 441.08 115.38">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                            stroke: #000;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 3.5px;
+                                        }
+                                    </style>
+                                </defs>
+                                <title>dotted-curve</title>
+                                <path class="cls-1 dotted-curve"
+                                    d="M452,372a183.75,183.75,0,0,1,43-49c10.93-8.66,20.2-13.92,31-20,17.68-9.94,39.63-22.3,69-31,11.55-3.42,55.19-15.45,112-8a271.62,271.62,0,0,1,66,17,263.14,263.14,0,0,1,39,20,279.79,279.79,0,0,1,51,41,287.43,287.43,0,0,1,28,33"
+                                    transform="translate(-450.93 -260.36)" />
+                            </svg>
+                        </div>
+                        <div> <img class="dp-24" src=" ./assets/flight_land-black-18dp.svg" alt=""></div>
+                    </div>
+
+
+
+                    <div class="destination-top">
+                        <div class="location-left">
+                            <h2>DHK</h2>
+                            <p class="text-small">Dhaka, Bangladesh</p>
+                        </div>
+                        <div class="location-right">
+                            <h2>SIN</h2>
+                            <p class="text-small">Changi, Singapore</p>
+                        </div>
+                    </div>
+                    <div class="details-widget">
+                        <h3>Flight details</h3>
+                        <div class="trip-type-container">
+                            <span class="trip-type_content">
+                                <ul class="round-trip">
+                                    <li>
+                                        <img class="sync-icon" src=" ./assets/sync-icon.svg" alt="">
+                                    </li>
+                                    <li class="round-trip-text">Round Trip</li>
+                                    <li class="one-way">One Way</li>
+                                </ul>
+                                <ul>
+                                    <label class="toggler-checkbox" for="toggle">
+                                        <input type="checkbox" id="toggle" name="month-year">
+                                        <span class="toggler"></span>
+                                    </label>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="full-flight-details_wrapper">
+                            <span class="details">
+                                <ul class="items">
+                                    <li class="position-relative">
+                                        <span class="vertical-dash"></span>
+                                        <img class="plane-right_icon" src=" ./assets/calender-plane-right.svg" alt="">
+
+                                    </li>
+                                    <li class="middle">26 March 2020, 19:45 <p class="text-small-upper">departure</p>
+                                    </li>
+                                    <li class="grey-circle"></li>
+                                </ul>
+                                <ul class="items">
+                                    <li>
+                                        <img class="plane-left_icon" src=" ./assets/calender-plane-left.svg" alt="">
+                                    </li>
+                                    <li class="middle">30 March 2020, 13:30 <p class="text-small-upper">return</p>
+                                    </li>
+                                    <li class="grey-circle"></li>
+                                </ul>
+                                <ul class="items">
+                                    <li>
+                                        <img class="sync-icon" src=" ./assets/chair.svg" alt="">
+                                    </li>
+                                    <li class="middle text-left">Business <p class="text-small-upper">class</p>
+                                    </li>
+                                    <li class="grey-circle"></li>
+                                </ul>
+                                <ul class="items">
+                                    <li>
+                                        <img class="sync-icon" src=" ./assets/user-profile.svg" alt="">
+                                    </li>
+                                    <li class="middle text-left position-custom">2 Persons <p class="text-small-upper">
+                                            passenger</p>
+                                    </li>
+                                    <li class="plus-minus_container">
+                                        <img class="add-icon" src=" ./assets/remove.svg" alt="">
+                                        <img class="remove-icon" src=" ./assets/add.svg" alt="">
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="round-button_container cont-padding">
+                    <div class="back-btn">
+                        <img src="./assets/back-icon.svg" alt="">
+                    </div>
+                    <button class="btn black-btn">
+                        <img src="./assets/next-icon.svg" alt="">
+                        <p>Next</p>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
