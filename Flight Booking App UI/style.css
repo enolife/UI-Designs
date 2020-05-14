@@ -21,6 +21,7 @@
 
 :root {
     --grey-text: rgb(129, 127, 127);
+    --grey-color: rgb(229, 230, 234);
     --black-color: rgb(0, 0, 0);
     --white-color: rgb(255, 255, 255);
 }
@@ -42,7 +43,7 @@ html {
 body {
     font-family: 'radikal', Tahoma;
     margin: 0;
-    background: url("./assets/map.png") hsla(224, 22%, 90%, 0.836) no-repeat center center fixed;
+    background: url("./assets/map.png") hsl(228, 11%, 91%) no-repeat center center fixed;
     background-size: contain;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -362,6 +363,10 @@ ul {
     border-radius: 0 18px 18px 0;
 }
 
+.trip-type-container:hover {
+    background: var(--grey-color);
+}
+
 .trip-type_content {
     display: flex;
     justify-content: space-between;
@@ -498,7 +503,7 @@ ul {
 }
 
 .plus-minus_container:hover {
-    background: rgba(223, 223, 223, 0.78);
+    background: var(--grey-color);
 }
 
 .plus-minus_container img {
