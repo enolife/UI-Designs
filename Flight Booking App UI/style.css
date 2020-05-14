@@ -3,6 +3,7 @@
     src: url('./assets/nootype-radikal-webfont.woff2') format('woff2'), url('./assets/nootype-radikal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url('./assets/radikal-medium-webfont.woff2') format('woff2'), url('./assets/radikal-medium-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     src: url('./assets/nootype_-_radikal_bold-webfont.woff2') format('woff2'), url('./assets/nootype_-_radikal_bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -492,7 +495,7 @@ ul {
 }
 
 .position-custom {
-    left: -9rem;
+    left: -9.3rem;
 }
 
 .grey-circle {
