@@ -73,7 +73,7 @@ main {
     background: linear-gradient(to bottom, hsl(220, 20%, 97%) 50%, hsl(228, 54%, 96%));
     padding: 45px 28px 2px;
     border-radius: 25px;
-    box-shadow: 22px 10px 54px -23px rgba(0, 0, 0, 0.36);
+    box-shadow: 22px 10px 54px -23px rgba(16, 18, 47, 0.36);
 }
 
 .image-container {
