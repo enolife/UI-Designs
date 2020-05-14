@@ -315,6 +315,19 @@ ul {
     stroke-dasharray: 19;
 }
 
+.curve-wrapper:hover .dotted-curve {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash-grow 1.5s linear forwards;
+}
+
+@keyframes dash-grow {
+    to {
+
+        stroke-dashoffset: 0;
+    }
+}
+
 .destination-top h2 {
     font-size: 1.72rem;
     font-weight: 500;
