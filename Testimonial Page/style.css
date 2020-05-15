@@ -9,7 +9,94 @@ html {
 }
 
 body {
-    font-family: 'radikal', Tahoma;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background: hsl(225, 100%, 97%);
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+.testimonial-card {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 11px -2px rgba(204, 215, 250, 0.911);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.testimonial-content {
+    background: #fff;
+    border-radius: 0 12px 12px 0;
+    padding: 6rem 6rem;
+}
+
+.quote-sign {
+    display: block;
+    font-size: 4.5rem;
+    height: 33px;
+}
+
+blockquote {
+    margin: 0 0 0 23px;
+}
+
+.quote-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    text-align: left;
+    margin-bottom: 5rem;
+
+}
+
+blockquote h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    color: hsl(227, 14%, 40%);
+    font-size: .95rem;
+    margin-top: 0;
+}
+
+
+
+.logos-cont {
+    display: flex;
+}
+
+.logos-cont>span {
+    display: grid;
+    place-items: center;
+    background: #fff;
+    padding: 18px 0;
+    margin-right: 13px;
+    width: 100%;
+}
+
+.logos-cont img {
+    width: 5rem;
+    height: auto;
+
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #000;
+    color: #fff;
 }
