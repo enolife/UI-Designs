@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: hsl(0, 10%, 23%);
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 480px;
+    background: hsl(0, 8%, 26%);
+    margin: 20vh auto 0;
+    padding: 8px 0 5px;
+}
+
+.stats-container {
+    width: 80%;
+    margin: 0 auto 30px;
+}
+
+.stats-container h2 {
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+.bar-chart_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 28px;
+}
+
+.bar-container {
+    text-align: center;
+}
+
+.bar-container p:nth-child(1) {
+    font-size: .77rem;
+    opacity: .87;
+}
+
+.bar-container p:nth-of-type(2) {
+    font-size: .79rem;
+    font-weight: bold;
+    margin: 7px 0 0;
+}
+
+.bar {
+    background: hsl(0, 10%, 24%);
+    border-radius: 5px;
+    display: grid;
+    align-items: end;
+    height: 130px;
+    width: 100%;
+}
+
+.bar-range {
+    display: block;
+    width: 100%;
+    background: hsl(9, 62%, 57%);
+    border-radius: 0 0 5px 5px;
+}
+
+.bar-1 :nth-child(1) {
+    height: 40.5%;
+}
+
+.bar-2 :nth-child(1) {
+    height: 53.5%;
+}
+
+.bar-3 :nth-child(1) {
+    height: 15.5%;
+}
+
+.bar-4 :nth-child(1) {
+    height: 12.5%;
+}
+
+.bar-5 :nth-child(1) {
+    height: 5.5%;
+}
+
+footer {
+    font-size: .78rem;
+    text-align: center;
+    opacity: .5;
+}
+
+
+/* Media Query */
+
+@media (max-width: 420px) {
+    .container {
+        width: 95%;
+    }
+
+    .stats-container {
+        width: 90%;
+    }
+
+    .stats-container h2 {
+        margin-top: 8px;
+    }
+
+    .bar-chart_wrapper {
+        grid-gap: 18px;
+        justify-content: center;
+    }
+}
