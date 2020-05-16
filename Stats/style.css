@@ -108,11 +108,24 @@ footer {
     }
 
     .stats-container h2 {
+        font-size: 1.5rem;
         margin-top: 8px;
+    }
+
+    .bar-container p:nth-child(1) {
+        font-size: .7rem;
+    }
+
+    .bar-container p:nth-of-type(2) {
+        font-size: .72rem;
     }
 
     .bar-chart_wrapper {
         grid-gap: 18px;
         justify-content: center;
+    }
+
+    footer {
+        font-size: .7rem;
     }
 }
