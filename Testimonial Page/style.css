@@ -30,16 +30,34 @@ body {
     box-shadow: 0px 8px 11px -2px rgba(204, 215, 250, 0.911);
 }
 
+.image-container {
+    background: #fff;
+}
+
 .profile-image {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: cover;
+}
+
+.profile-image:hover {
+    opacity: .9;
+    filter: grayscale(88%);
+    transition: .5s ease-in;
 }
 
 .testimonial-content {
     background: #fff;
     border-radius: 0 12px 12px 0;
-    padding: 6rem 6rem;
+    /* padding: 6rem 6rem; */
+}
+
+.content-wrapper {
+    width: 64%;
+    margin: 15% auto;
+    display: grid;
+    align-content: center;
 }
 
 .quote-sign {
@@ -57,7 +75,6 @@ blockquote {
     line-height: 1.9;
     text-align: left;
     margin-bottom: 5rem;
-
 }
 
 blockquote h3 {
@@ -71,8 +88,6 @@ blockquote h3 {
     margin-top: 0;
 }
 
-
-
 .logos-cont {
     display: flex;
 }
@@ -81,22 +96,80 @@ blockquote h3 {
     display: grid;
     place-items: center;
     background: #fff;
+    border-radius: 6px;
     padding: 18px 0;
     margin-right: 13px;
     width: 100%;
+    opacity: .75;
+    transition: .4s ease;
+}
+
+.logos-cont>span:hover {
+    transform: scale(1.17);
+    box-shadow: 0px 8px 11px -2px rgba(204, 215, 250, 0.911);
+    opacity: 1;
 }
 
 .logos-cont img {
-    width: 5rem;
+    width: 45%;
     height: auto;
-
 }
 
 .btn {
     display: flex;
     width: 100%;
     border: 0;
+    border-radius: 6px;
     outline: none;
     background: #000;
     color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.btn:hover .btn-text {
+    animation: swingHorizontal 1s ease;
+    animation-iteration-count: 1;
+    font-size: 15px;
+}
+
+@keyframes swingHorizontal {
+    15% {
+        transform: translateX(7px);
+    }
+
+    30% {
+        transform: translateX(-7px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    65% {
+        transform: translateX(-4px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn img {
+    width: 28px;
+    transform: rotate(180deg);
+    border-radius: 6px;
+    transition: transform .3s ease-in-out;
+}
+
+.btn:hover img {
+    transform: translateX(15px);
 }
