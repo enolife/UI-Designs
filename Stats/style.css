@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: hsl(0, 10%, 23%);
+    background: rgb(65, 53, 53);
     font-family: 'Nunito Sans', sans-serif;
     color: #fff;
 }
@@ -17,7 +17,7 @@ body {
 .container {
     width: 90%;
     max-width: 480px;
-    background: hsl(0, 8%, 26%);
+    background: rgb(72, 61, 61);
     margin: 20vh auto 0;
     padding: 8px 0 5px;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .bar {
-    background: hsl(0, 10%, 24%);
+    background: rgb(67, 55, 55);
     border-radius: 5px;
     display: grid;
     align-items: end;
@@ -65,7 +65,7 @@ body {
 .bar-range {
     display: block;
     width: 100%;
-    background: hsl(9, 62%, 57%);
+    background: rgb(213, 98, 77);
     border-radius: 0 0 5px 5px;
 }
 
@@ -100,6 +100,7 @@ footer {
 
 @media (max-width: 420px) {
     .container {
+        background: rgb(84, 74, 74);
         width: 95%;
     }
 
