@@ -24,14 +24,11 @@ body {
 
 .testimonial-card {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1.4fr;
+    grid-template-rows: 380px;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0px 8px 11px -2px rgba(204, 215, 250, 0.911);
-}
-
-.image-container {
-    background: #fff;
 }
 
 .profile-image {
@@ -39,6 +36,7 @@ body {
     height: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 12px 0 0 12px;
 }
 
 .profile-image:hover {
@@ -55,7 +53,7 @@ body {
 
 .content-wrapper {
     width: 64%;
-    margin: 15% auto;
+    margin: 11% auto;
     display: grid;
     align-content: center;
 }
@@ -63,7 +61,7 @@ body {
 .quote-sign {
     display: block;
     font-size: 4.5rem;
-    height: 33px;
+    height: 27px;
 }
 
 blockquote {
@@ -74,17 +72,17 @@ blockquote {
     font-size: 1.05rem;
     line-height: 1.9;
     text-align: left;
-    margin-bottom: 5rem;
+    margin-bottom: 3.7rem;
 }
 
 blockquote h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 10px;
 }
 
 .small-text {
     color: hsl(227, 14%, 40%);
-    font-size: .95rem;
+    font-size: .94rem;
     margin-top: 0;
 }
 
@@ -125,6 +123,7 @@ blockquote h3 {
     color: #fff;
     align-items: center;
     justify-content: space-evenly;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -172,4 +171,115 @@ blockquote h3 {
 
 .btn:hover img {
     transform: translateX(15px);
+}
+
+
+/* Media Query */
+
+@media (max-width: 672px) {
+    .container {
+        width: 80%;
+    }
+
+    .testimonial-card {
+        grid-template-rows: 300px;
+    }
+
+    .content-wrapper {
+        width: 80%;
+        margin: 18% auto;
+    }
+
+    .quote-sign {
+        font-size: 2.8rem;
+        height: 11px;
+    }
+
+    .quote-text {
+        font-size: .91rem;
+        line-height: 1.7;
+        margin-bottom: 1.8rem;
+    }
+
+    blockquote h3 {
+        font-size: .9rem;
+    }
+
+    .small-text {
+        font-size: .8rem;
+    }
+
+    .logos-cont>span {
+        padding: 15px 0;
+    }
+
+    .logos-cont>span:hover {
+        transform: scale(1.13);
+    }
+
+    .btn {
+        font-size: .75rem;
+    }
+
+    .btn:hover .btn-text {
+        font-size: .77rem;
+    }
+
+    .btn img {
+        width: 21px;
+    }
+
+    .btn:hover img {
+        transform: translateX(9px);
+    }
+}
+
+@media (max-width: 505px) {
+    .container {
+        width: 90%;
+    }
+
+    .testimonial-card {
+        grid-template-rows: 250px;
+    }
+
+    .content-wrapper {
+        margin: 11% auto;
+    }
+
+    .quote-sign {
+        font-size: 1.9rem;
+        height: 4px;
+    }
+
+    blockquote {
+        margin: 0 0 0 19px;
+    }
+
+    .quote-text {
+        font-size: .78rem;
+        margin-bottom: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .small-text {
+        font-size: .7rem;
+    }
+
+    .logos-cont>span {
+        margin-right: 8px;
+        padding: 3px 0;
+    }
+
+    .btn {
+        font-size: .69rem;
+    }
+
+    .btn:hover .btn-text {
+        font-size: .70rem;
+    }
+
+    .btn:hover img {
+        transform: translateX(7px);
+    }
 }
