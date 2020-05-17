@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group-8" transform="translate(1 1)">
+    <g id="icons/border/dark/plus">
+      <g id="icons/border/dark/plus">
+        <path d="M0.5 0L0.5 14" transform="translate(6.5 0)" id="Path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 0.5L14 0.5" transform="translate(0 6.5)" id="Path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>

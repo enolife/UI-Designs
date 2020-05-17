@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- NAVBAR -->
+        <nav class="nav">
+            <div class="nav-contents">
+                <div class="left-menu">
+                    <ul>
+                        <li>Dashboard</li>
+                        <li>Projects</li>
+                        <li>Users</li>
+                    </ul>
+                </div>
+
+                <div class="right-menu">
+                    <ul>
+                        <li id="nav-button"><button class="btn nav-btn">
+                                <img class="add-icon" src="./img/add-icon.svg" alt="">
+                                <p>Add new segment</p>
+                            </button></li>
+                        <li class="notification-icon"><img class="bell-icon" src="./img/bell-icon.svg" alt="bell icon">
+                        </li>
+                        <li><img src="./img/profile-image.png" alt="profile picture"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-image_wrapper">
+                <img class="swords" src="./img/swords.svg" alt="swords image">
+            </div>
+            <p>Upgrade to <span>PRO</span> to unlock more features</p>
+            <button class="btn sidebar-btn">upgrade</button>
+        </aside>
+
+        <!-- CARDS -->
+        <article class="card-users">
+            <span class="stats-text">
+                <p>Users</p>
+                <h2 class="num-users">9,452</h2>
+                <div class="line-chart_wrapper">
+                    <img src="./img/linechart-1.svg" alt="chart image">
+                </div>
+            </span>
+        </article>
+        <article class="card-new_users">
+            <span class="stats-text">
+                <p>New users</p>
+                <h2 class="num-users">6,245</h2>
+                <div class="line-chart_wrapper">
+                    <img src="./img/linechart-2.svg" alt="chart image">
+                </div>
+            </span>
+        </article>
+        <article class="card-stats_bars">
+            <div class="stat-1">
+                <div class="flex">
+                    <span class="small-circle color-1"></span>
+                    <p>24% Direct</p>
+                </div>
+                <span class="range color-1 radius-left"></span>
+            </div>
+            <div class="stat-2">
+                <div class="flex">
+                    <span class="small-circle color-2"></span>
+                    <p>31% Social</p>
+                </div>
+                <span class="range color-2"></span>
+            </div>
+            <div class="stat-3">
+                <div class="flex">
+                    <span class="small-circle color-3"></span>
+                    <p>45% Organic</p>
+                </div>
+                <span class="range color-3 radius-right"></span>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

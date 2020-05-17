@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="270px" height="52px" viewBox="0 0 270 52" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="8" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.6784314 0 0 0 0 0.5686275 0 0 0 0 0.945098 0 0 0 0.2352941 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <path d="M0 49L52.5 28.5L89.5 1.70003e-16L152.5 28.5L200 7.5L241 35.5L267 33.5L267 49L0 49Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Path" transform="translate(1.5 1.5)">
+    <path d="M0 49L52.5 28.5L89.5 1.70003e-16L152.5 28.5L200 7.5L241 35.5L267 33.5L267 49L0 49Z" id="Mask" fill="#F3F3FF" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <g filter="url(#filter_1)">
+        <path d="M0 49L52.5 28.5L89.5 -2.38004e-14L152.5 28.5L200 7.5L241 36L267 33.5" id="Path" fill="none" stroke="#918BED" stroke-width="3" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+</svg>
