@@ -53,11 +53,6 @@ ul {
     padding: 0 0 0 8%;
 }
 
-.right-menu ul {
-    display: flex;
-    padding: 0 8.3% 0 0;
-}
-
 .left-menu li:nth-of-type(-n+2) {
     margin-right: 10%;
 }
@@ -66,14 +61,22 @@ ul {
     opacity: 0.7;
 }
 
+
 .right-menu {
     display: flex;
     justify-content: center;
 }
 
 .right-menu ul {
+    display: flex;
+    padding: 0 8.3% 0 0;
     align-items: center;
     margin: 0;
+}
+
+.right-menu .profile-image {
+    width: 42px;
+    height: auto;
 }
 
 .btn {
