@@ -287,10 +287,15 @@ article img {
     }
 
     .left-menu li:nth-of-type(-n+2) {
-        margin-right: 4%;
+        margin-right: 6%;
+    }
+
+    .right-menu ul {
+        padding: 0 15% 0 0;
     }
 
     .bell-icon {
+        width: 18px;
         margin-right: 8px;
     }
 
@@ -310,7 +315,7 @@ article img {
 
     .sidebar p {
         font-size: .76rem;
-        margin: .7rem 0;
+        margin-bottom: 1.3rem;
     }
 
     .sidebar-btn {
@@ -322,6 +327,7 @@ article img {
 
     .card-stats_bars {
         grid-column: 1/2;
+        grid-gap: 4px;
         padding: 2.2rem .9rem 0 !important;
     }
 }
