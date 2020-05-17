@@ -132,7 +132,7 @@ body {
 
 .hidden:checked~.pause-icon {
     display: block;
-    width: 22px;
+    width: 24px;
 }
 
 
