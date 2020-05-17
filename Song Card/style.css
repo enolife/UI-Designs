@@ -92,6 +92,14 @@ body {
     box-shadow: 0 2px 9px 0 hsl(231, 45%, 88%);
 }
 
+.hidden {
+    width: 0;
+    height: 0;
+    border: none;
+    outline: none;
+    display: none;
+}
+
 .btn-icon {
     position: relative;
     left: 2.5px;
@@ -100,11 +108,34 @@ body {
 
 .btn-inner-wrapper:hover .btn-icon {
     animation-name: pulse;
-    animation-duration: 1.1s;
+    animation-duration: .6s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
     filter: saturate(2);
 }
+
+.btn-inner-wrapper:hover .pause-icon {
+    animation-name: pulse;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    filter: saturate(2);
+}
+
+.pause-icon {
+    display: none;
+}
+
+.hidden:checked+.play-icon {
+    display: none;
+}
+
+.hidden:checked~.pause-icon {
+    display: block;
+    width: 22px;
+}
+
+
 
 @keyframes pulse {
     0% {
@@ -142,6 +173,10 @@ body {
 
     .btn-icon {
         width: 15px;
+    }
+
+    .hidden:checked~.pause-icon {
+        width: 18px;
     }
 
     @keyframes pulse {
