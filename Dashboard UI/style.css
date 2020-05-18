@@ -475,7 +475,16 @@ article img {
 
     .card-stats_bars {
         grid-column: 1/2;
-        grid-gap: 4px;
+        grid-gap: 6px;
         padding: 2.2rem .9rem 0 !important;
+    }
+
+    .card-stats_bars p {
+        padding-left: 5px;
+        font-size: .83rem;
+    }
+
+    .range {
+        height: 10px;
     }
 }
