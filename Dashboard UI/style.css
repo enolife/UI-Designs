@@ -392,12 +392,14 @@ article img {
     }
 }
 
+
+
 @media (max-width: 420px) {
     .container {
         width: 92%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 65px 210px 175px 175px 100px;
+        grid-template-rows: 65px 175px 175px 100px 210px;
         margin: 2vh auto 6vh;
     }
 
@@ -435,7 +437,7 @@ article img {
 
     .sidebar {
         grid-column: auto;
-        grid-row: auto;
+        grid-row: 5;
         padding: 6% 5% 0;
     }
 
