@@ -417,7 +417,7 @@ article img {
     }
 
     .left-menu li::after {
-        margin: 3px 0 0;
+        margin: 2px 0 0;
     }
 
     .bell-icon {
@@ -455,6 +455,22 @@ article img {
         width: 80%;
         margin: 0 auto;
         padding: 12px 0;
+    }
+
+    .stats-popup {
+        width: 20%;
+        height: 35px;
+        padding: 1px 0 2px;
+        right: -2px;
+        bottom: 43px;
+    }
+
+    .stats-popup p {
+        font-size: .65rem;
+    }
+
+    .stats-popup h3 {
+        font-size: .8rem;
     }
 
     .card-stats_bars {
