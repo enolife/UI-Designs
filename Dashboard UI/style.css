@@ -12,6 +12,7 @@ body {
     background: url("./img/bg-blob.svg")no-repeat center center fixed, linear-gradient(to left, rgb(157, 162, 250), rgb(191, 194, 252) 80%);
     font-family: 'Muli', sans-serif;
     color: #000;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -53,6 +54,10 @@ ul {
     padding: 0 0 0 8%;
 }
 
+.left-menu li {
+    cursor: pointer;
+}
+
 .left-menu li:nth-of-type(-n+2) {
     margin-right: 10%;
 }
@@ -61,6 +66,25 @@ ul {
     opacity: 0.7;
 }
 
+.left-menu li:nth-of-type(n+2):hover {
+    opacity: 1;
+}
+
+.left-menu li::after {
+    content: "";
+    display: block;
+    background: rgb(158, 117, 255);
+    width: 0;
+    height: 2.1px;
+    margin: 5px 0 0;
+    opacity: 1;
+    -webkit-transition: ease-in-out 300ms;
+    transition: ease-in-out 300ms;
+}
+
+.left-menu li:hover::after {
+    width: 80%;
+}
 
 .right-menu {
     display: flex;
@@ -77,6 +101,11 @@ ul {
 .right-menu .profile-image {
     width: 42px;
     height: auto;
+    cursor: pointer;
+}
+
+.right-menu .profile-image:hover {
+    opacity: .7;
 }
 
 .btn {
@@ -89,6 +118,11 @@ ul {
     outline: none;
     border: 0;
     white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsl(258, 98%, 65%);
 }
 
 .nav-btn {
@@ -104,10 +138,38 @@ ul {
 
 .notification-icon {
     margin: 0 1.5rem 0 3.5rem;
+    position: relative;
+    cursor: pointer;
 }
 
 .bell-icon {
     margin-right: 30px;
+    transition: .2s ease;
+}
+
+.bell-icon:hover {
+    transform: scale(1.043) perspective(1px);
+    backface-visibility: hidden;
+}
+
+.notification-count {
+    position: absolute;
+    display: grid;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: rgb(158, 117, 255);
+    color: #fff;
+    place-items: center;
+    font-size: .73rem;
+    top: -8px;
+    left: 9px;
+    transition: .4s ease;
+}
+
+.notification-icon:hover .notification-count {
+    background: hsl(244, 28%, 22%);
+    color: #fff;
 }
 
 .sidebar {
@@ -175,11 +237,66 @@ article img {
     width: 100%;
 }
 
+.card-new_users {
+    position: relative;
+}
+
+.stats-popup {
+    display: grid;
+    place-items: center;
+    width: 28%;
+    height: 53px;
+    position: absolute;
+    background: hsl(244, 28%, 22%);
+    color: #fff;
+    white-space: nowrap;
+    padding: 8px 0 13px;
+    right: -22px;
+    bottom: 35px;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px -12px hsl(245, 32%, 23%);
+}
+
+.stats-popup::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 100%;
+    border: 5px solid transparent;
+    border-right: 5px solid hsl(246, 35%, 16%);
+}
+
+.node {
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 63px;
+    top: 6px;
+}
+
+.stats-popup p {
+    font-size: .73rem;
+}
+
+.stats-popup h3 {
+    font-size: 1rem;
+}
+
+.stats-popup h3,
+.stats-popup p {
+    margin: 0;
+    padding: 0;
+}
+
 .line-chart_wrapper {
     position: absolute;
     bottom: 0;
     padding-bottom: .9rem;
     margin: 0 1.8rem;
+    cursor: pointer;
 }
 
 .card-stats_bars {
@@ -297,6 +414,10 @@ article img {
         padding: 0 15% 0 0;
     }
 
+    .left-menu li::after {
+        margin: 3px 0 0;
+    }
+
     .bell-icon {
         width: 18px;
         margin-right: 8px;
@@ -304,6 +425,12 @@ article img {
 
     .notification-icon {
         margin: 0 1rem 0 0;
+    }
+
+    .notification-count {
+        font-size: .7rem;
+        height: 15px;
+        width: 15px;
     }
 
     .sidebar {
