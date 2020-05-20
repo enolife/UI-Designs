@@ -180,6 +180,7 @@ input:checked+.radio-outline {
 
     .notification-modal__body p {
         font-size: .8rem;
+        margin-left: 1.5rem;
     }
 
     .radio-outline {
