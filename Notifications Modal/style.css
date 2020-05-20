@@ -41,11 +41,12 @@ body {
     width: 12px;
     height: auto;
     cursor: pointer;
-    transition: .4s ease;
+    transition: .25s ease;
 }
 
 .close-icon:hover {
     transform: scale(1.2);
+    filter: invert(10%) sepia(55%) saturate(7457%) hue-rotate(359deg) brightness(107%) contrast(117%);
 }
 
 .notification-modal__body {
