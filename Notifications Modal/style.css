@@ -40,6 +40,12 @@ body {
     display: block;
     width: 12px;
     height: auto;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.close-icon:hover {
+    transform: scale(1.2);
 }
 
 .notification-modal__body {
@@ -62,32 +68,39 @@ label {
     align-items: center;
 }
 
-.radio-outline {
-    border: 1px solid grey;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-right: 15px;
-    display: grid;
-    place-items: center;
-}
-
 input[type='radio'] {
-    height: 6px;
-    width: 6px;
+    height: 0;
+    width: 0;
     outline: 0;
+    border: 0;
+    opacity: 0;
     border-radius: 100vh;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin: 0;
+    z-index: 5;
 }
 
-input[type='radio']:checked {
+.radio-outline {
+    border: 1px solid hsl(226, 18%, 40%);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: grid;
+    place-items: center;
+    transition: .3s ease;
+}
+
+.radio-inner_circle {
+    height: 6px;
+    width: 6px;
     background-color: var(--white);
+    border-radius: 50%;
 }
 
-form:valid .radio-outline {
+input:checked+.radio-outline {
     background: var(--deep-blue);
 }
 
@@ -103,7 +116,6 @@ form:valid .radio-outline {
     justify-content: center;
     padding: 2.6rem 0 3.5rem;
     border-top: 1px solid hsl(236, 88%, 94%);
-
 }
 
 .btn {
@@ -121,8 +133,63 @@ form:valid .radio-outline {
     color: hsl(226, 18%, 40%);
 }
 
+.cancel-btn:hover {
+    background: var(--deep-blue);
+    color: var(--white);
+}
+
 .save-btn {
     background: hsl(225, 49%, 12%);
     color: var(--white);
     margin-left: 10px;
+}
+
+.save-btn:hover {
+    opacity: .8;
+}
+
+
+/* Media Query */
+
+@media (max-width: 420px) {
+    .container {
+        width: 90%;
+        max-width: 600px;
+        background: var(--white);
+        margin: 3vh auto;
+    }
+
+    .close-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .notification-modal__item {
+        margin-bottom: 1.5rem;
+    }
+
+    .notification-modal__header h3 {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: .95rem;
+    }
+
+    .notification-modal__body p {
+        font-size: .8rem;
+    }
+
+    .radio-outline {
+        height: 15.5px;
+        width: 15.5px;
+    }
+
+    .radio-inner_circle {
+        height: 4px;
+        width: 4px;
+    }
+
+    .modal-buttons {
+        padding: 2rem 0 3rem;
+    }
 }
