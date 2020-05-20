@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Notifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="notification-modal__close">
+            <img class="close-icon" src="./img/close-icon.svg" alt="close">
+        </div>
+
+        <article class="notification-modal__body">
+            <div class="notification-modal__header">
+                <h3>Notification settings</h3>
+            </div>
+            <form>
+                <div class="notification-modal__item">
+
+                    <label for="not">
+                        <span class="radio-outline">
+                            <input type="radio" name="subscribe" id="not" value="not subscribed" required>
+                        </span>
+                        Not subscribed
+                    </label>
+                    <p>Only receive notifications from this request when you have participated or have been @mentioned
+                    </p>
+                </div>
+                <div class="notification-modal__item">
+                    <label for="sub">
+                        <span class="radio-outline">
+                            <input type="radio" name="subscribe" id="sub" value="subscribed">
+                        </span>
+                        subscribed
+                    </label>
+                    <p>Receive all notifications from this request.</p>
+                </div>
+                <div class="notification-modal__item">
+                    <label for="custom">
+                        <span class="radio-outline">
+                            <input type="radio" name="subscribe" id="custom" value="">
+                        </span>
+                        subscribed
+                    </label>
+                    <p>You will only be notified for the events selected from the list below. If you participate or are
+                        @mentioned you will be subscribed.</p>
+                </div>
+            </form>
+        </article>
+
+        <div class="modal-buttons">
+            <button class="btn cancel-btn">Cancel</button>
+            <button class="btn save-btn">Save</button>
+        </div>
+    </main>
+</body>
+
+</html>

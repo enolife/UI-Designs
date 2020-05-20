@@ -1,0 +1,128 @@
+:root {
+    --background-color: hsl(228, 45%, 98%);
+    --deep-blue: hsl(225, 49%, 12%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--background-color);
+    font-family: 'Muli', sans-serif;
+    color: #000;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: var(--white);
+    margin: 10vh auto;
+    padding-top: 20px;
+    box-shadow: 0 37px 70px -24px hsla(228, 100%, 29%, 0.255);
+}
+
+.notification-modal__close {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.close-icon {
+    display: block;
+    width: 12px;
+    height: auto;
+}
+
+.notification-modal__body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notification-modal__header h3 {
+    font-size: 1.31rem;
+}
+
+.notification-modal__item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+label {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.radio-outline {
+    border: 1px solid grey;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: grid;
+    place-items: center;
+}
+
+input[type='radio'] {
+    height: 6px;
+    width: 6px;
+    outline: 0;
+    border-radius: 100vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type='radio']:checked {
+    background-color: var(--white);
+}
+
+form:valid .radio-outline {
+    background: var(--deep-blue);
+}
+
+.notification-modal__body p {
+    margin-left: 1.7rem;
+    font-size: .85rem;
+    width: 80%;
+}
+
+.modal-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2.6rem 0 3.5rem;
+    border-top: 1px solid hsl(236, 88%, 94%);
+
+}
+
+.btn {
+    width: 34%;
+    padding: 9.5px 0;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    margin-right: 10px;
+    border: 1px solid hsl(224, 57%, 91%);
+    background: var(--white);
+    color: hsl(226, 18%, 40%);
+}
+
+.save-btn {
+    background: hsl(225, 49%, 12%);
+    color: var(--white);
+    margin-left: 10px;
+}
