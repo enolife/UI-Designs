@@ -66,6 +66,7 @@ label {
     font-weight: 700;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 input[type='radio'] {
@@ -124,6 +125,7 @@ input:checked+.radio-outline {
     border: 0;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .cancel-btn {
