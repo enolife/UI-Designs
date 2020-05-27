@@ -18,19 +18,106 @@ body {
 .container {
     background: #fff;
     width: 90%;
-    max-width: 450px;
-    border: 1px solid red;
-    margin: auto;
+    max-width: 430px;
+    margin: 18vh auto;
     padding: 3.5rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 20px 18px -11px rgba(214, 211, 238, 0.9);
 }
 
 .card {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid blue;
 }
 
 .envelope-icon {
     width: 3.6rem;
     height: auto;
+}
+
+.card-text {
+    width: 70%;
+    margin-right: auto;
+}
+
+.card-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.card-text p {
+    font-size: .87rem;
+    margin-bottom: 1.5rem
+}
+
+.card-input form {
+    display: flex;
+}
+
+.email-input {
+    height: 3rem;
+    border: 1px solid hsl(236, 34%, 83%);
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+    padding: 0 1.1rem;
+    width: 100%;
+}
+
+::placeholder {
+    opacity: 0.7;
+}
+
+.email-input:focus {
+    border: 1px solid #f3c147;
+    outline: none;
+}
+
+.subscribe-btn {
+    background: hsl(34, 100%, 56%);
+    color: #fff;
+    height: 3rem;
+    border-radius: 0 6px 6px 0;
+    border: 0;
+    width: 45%;
+}
+
+.subscribe-btn:hover {
+    background: hsl(34, 79%, 50%);
+    outline: none;
+}
+
+.subscribe-btn:focus {
+    background: hsl(34, 79%, 50%);
+    outline: none;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 470px) {
+    .envelope-icon {
+        width: 2.3rem;
+    }
+
+    .card-text {
+        width: 21ch;
+    }
+
+    .card-text h3 {
+        font-size: .9rem;
+    }
+
+    .card-text p {
+        font-size: .75rem;
+    }
+
+    .email-input {
+        padding: 0 .7rem;
+    }
+
+    .email-input,
+    .subscribe-btn {
+        height: 2.45rem;
+    }
 }
