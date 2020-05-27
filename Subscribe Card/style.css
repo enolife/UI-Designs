@@ -7,3 +7,30 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+body {
+    background: hsl(246, 36%, 95%);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid red;
+    margin: auto;
+    padding: 3.5rem 2.5rem;
+}
+
+.card {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.envelope-icon {
+    width: 3.6rem;
+    height: auto;
+}
