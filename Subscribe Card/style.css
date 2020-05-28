@@ -33,6 +33,7 @@ body {
 .envelope-icon {
     width: 3.6rem;
     height: auto;
+    pointer-events: none;
 }
 
 .card-text {
