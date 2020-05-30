@@ -95,8 +95,9 @@ body {
 }
 
 .ui--menu {
-    margin-bottom: 1.8rem;
+    margin: 0 auto 1.8rem;
     text-align: center;
+    width: fit-content;
 }
 
 .ui--menu p {
@@ -299,5 +300,49 @@ body {
 
     .ui-2 {
         padding: 1rem 10% 3.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .search-input {
+        height: 2.5rem;
+    }
+
+    .search-icon {
+        top: 11px;
+    }
+
+    .ui--menu p {
+        font-size: .9rem;
+    }
+
+    .campaign-btn {
+        height: 2.5rem;
+    }
+
+    .profile-image {
+        width: 58px;
+    }
+
+    .profile-details h3 {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: .6rem;
+        padding: 3px 5.5px;
+    }
+
+    .profile-details>span:nth-child(2)>p {
+        font-size: .87rem;
+    }
+
+    .logout-icon {
+        width: 15px;
+    }
+
+    .logout p {
+        font-size: .94rem;
     }
 }
