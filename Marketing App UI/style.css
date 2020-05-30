@@ -13,6 +13,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -250,7 +251,7 @@ body {
 .card:hover {
     transform: perspective(1px) scale(1.05);
     box-shadow: 0 13px 10px -12px hsla(238, 30%, 81%, 0.651);
-    border: 2px solid hsl(224, 28%, 92%);
+    border: 1px solid hsl(224, 28%, 92%);
     cursor: default;
 }
 
