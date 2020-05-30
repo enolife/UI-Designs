@@ -345,4 +345,38 @@ body {
     .logout p {
         font-size: .94rem;
     }
+
+
+    /* UI 2 */
+    .ui-2 {
+        padding: 1rem 10% 3.4rem;
+    }
+
+    .ui--date>h1 {
+        font-size: 1.1rem;
+    }
+
+    .ui--date>p {
+        font-size: .77rem;
+    }
+
+    .ui--cards-wrapper {
+        grid-template-rows: repeat(2, 77px);
+    }
+
+    .card:nth-child(-n+4)>h2 {
+        font-size: 1.1rem;
+    }
+
+    .card:nth-child(-n+4)>p {
+        font-size: .85rem;
+    }
+
+    .footer-item p {
+        font-size: .8rem;
+    }
+
+    .footer-item h3 {
+        font-size: .9rem;
+    }
 }
