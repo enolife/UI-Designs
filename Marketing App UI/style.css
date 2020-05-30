@@ -1,5 +1,6 @@
 :root {
     --text-color: hsl(226, 35%, 19%);
+    --moody-blue: hsl(239, 51%, 66%);
     --white-color: #fff;
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 .ui--close .close-icon {
-    width: 10px;
+    width: 11px;
     left: 100%;
     position: relative;
 }
@@ -55,6 +56,8 @@ body {
 .ui--input_search ::placeholder {
     color: var(--text-color);
     font-size: .87rem;
+    color: rgb(122, 123, 129);
+    font-weight: 500;
 }
 
 .search-icon {
@@ -68,12 +71,17 @@ body {
     height: 2.9rem;
     width: 100%;
     background: rgb(244, 246, 254);
-    border: 1px solid hsl(224, 28%, 92%);
+    border: 2px solid hsla(224, 27%, 92%, 0.774);
     border-radius: 50px;
     font-size: .97rem;
     margin-bottom: 1.5rem;
     padding-left: 2.9rem;
     outline: none;
+}
+
+.search-input:focus,
+.search-input:hover {
+    box-shadow: 0 1px 4px 0 rgba(32, 33, 36, 0.199);
 }
 
 .ui--menu {
@@ -82,7 +90,7 @@ body {
 }
 
 .campaign-btn {
-    background: hsl(239, 51%, 66%);
+    background: var(--moody-blue);
     border: 0;
     border-radius: 50px;
     color: var(--white-color);
@@ -148,4 +156,73 @@ body {
 .logout-icon {
     width: 17px;
     margin-right: 8px;
+}
+
+
+/* U1 2 */
+
+.arrow-back {
+    width: 13px;
+}
+
+.ui--date {
+    margin-bottom: 2.2rem;
+}
+
+.ui--date>h1 {
+    font-size: 1.25rem;
+    margin-bottom: .2rem;
+}
+
+.ui--date>p {
+    color: var(--moody-blue);
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.ui--cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 85px);
+    grid-gap: 8px;
+    margin-bottom: 2.8rem;
+}
+
+.card {
+    border: 1px solid hsl(224, 28%, 92%);
+    border-radius: 10px;
+    text-align: center;
+    transition: 150ms ease;
+}
+
+.card:hover {
+    transform: perspective(1px) scale(1.05);
+    box-shadow: 0 13px 10px -12px hsla(238, 70%, 67%, 0.651);
+}
+
+.ui--cards-wrapper>div:nth-child(2) {
+    background: var(--moody-blue);
+    color: #fff;
+    box-shadow: 0 13px 10px -12px hsla(238, 30%, 81%, 0.651);
+}
+
+.card:nth-child(-n+4)>h2 {
+    font-size: 1.3rem;
+    margin-bottom: .2rem;
+}
+
+.card:nth-child(-n+4)>p {
+    margin-top: 0;
+}
+
+.footer-item p {
+    font-size: .83rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.footer-item h3 {
+    font-size: 1rem;
+    margin-top: 0;
 }
