@@ -1,6 +1,7 @@
 :root {
     --text-color: hsl(226, 35%, 19%);
     --moody-blue: hsl(239, 51%, 66%);
+    --moody-blue_hover: hsl(239, 57%, 60%);
     --white-color: #fff;
 }
 
@@ -47,6 +48,13 @@ body {
     width: 11px;
     left: 100%;
     position: relative;
+    transition: 350ms linear;
+    cursor: pointer;
+}
+
+.ui--close .close-icon:hover {
+    transform: scale(1.25);
+    filter: invert(8%) sepia(90%) saturate(3002%) hue-rotate(335deg) brightness(97%) contrast(200%);
 }
 
 .ui--input_search {
@@ -68,6 +76,7 @@ body {
 }
 
 .search-input {
+    color: #212121;
     height: 2.9rem;
     width: 100%;
     background: rgb(244, 246, 254);
@@ -75,7 +84,7 @@ body {
     border-radius: 50px;
     font-size: .97rem;
     margin-bottom: 1.5rem;
-    padding-left: 2.9rem;
+    padding: 0 .9rem 0 2.9rem;
     outline: none;
 }
 
@@ -87,6 +96,15 @@ body {
 .ui--menu {
     margin-bottom: 1.8rem;
     text-align: center;
+}
+
+.ui--menu p {
+    transition: 300ms linear;
+}
+
+.ui--menu p:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .campaign-btn {
@@ -102,6 +120,12 @@ body {
     margin: 0 auto 2.4rem;
     outline: none;
     box-shadow: 0 13px 15px -9px hsla(238, 70%, 67%, 0.651);
+    cursor: pointer;
+    transition: 150ms ease-out;
+}
+
+.campaign-btn:hover {
+    background: var(--moody-blue_hover);
 }
 
 .divider {
@@ -118,6 +142,11 @@ body {
     height: auto;
     filter: saturate(115%);
     margin-right: .7rem;
+}
+
+.profile-image:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
 .ui--profile-wrapper {
@@ -146,11 +175,26 @@ body {
     margin-block-start: 0;
 }
 
+.profile-details>span:nth-child(2)>p:hover {
+    color: var(--moody-blue_hover);
+    cursor: pointer;
+}
+
 .logout {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+}
+
+.logout p {
+    transition: 300ms linear;
+}
+
+.logout p:hover,
+.logout-icon:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .logout-icon {
@@ -163,6 +207,12 @@ body {
 
 .arrow-back {
     width: 13px;
+    transition: 300ms ease-in;
+}
+
+.arrow-back:hover {
+    transform: scale(1.23);
+    cursor: pointer;
 }
 
 .ui--date {
@@ -179,13 +229,14 @@ body {
     font-size: .8rem;
     font-weight: 500;
     margin-top: 0;
+    cursor: default;
 }
 
 .ui--cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 85px);
-    grid-gap: 8px;
+    grid-template-rows: repeat(2, 83px);
+    grid-gap: 8.5px;
     margin-bottom: 2.8rem;
 }
 
@@ -193,18 +244,25 @@ body {
     border: 1px solid hsl(224, 28%, 92%);
     border-radius: 10px;
     text-align: center;
-    transition: 150ms ease;
+    transition: 150ms ease-out;
 }
 
 .card:hover {
     transform: perspective(1px) scale(1.05);
-    box-shadow: 0 13px 10px -12px hsla(238, 70%, 67%, 0.651);
+    box-shadow: 0 13px 10px -12px hsla(238, 30%, 81%, 0.651);
+    border: 2px solid hsl(224, 28%, 92%);
+    cursor: default;
 }
 
 .ui--cards-wrapper>div:nth-child(2) {
     background: var(--moody-blue);
     color: #fff;
-    box-shadow: 0 13px 10px -12px hsla(238, 30%, 81%, 0.651);
+    box-shadow: 0 13px 10px -12px hsla(238, 70%, 67%, 0.651);
+}
+
+.ui--cards-wrapper>div:nth-child(2):hover {
+    background: var(--moody-blue_hover);
+    box-shadow: 0 13px 10px -12px hsla(238, 70%, 67%, 0.651);
 }
 
 .card:nth-child(-n+4)>h2 {
@@ -225,4 +283,20 @@ body {
 .footer-item h3 {
     font-size: 1rem;
     margin-top: 0;
+}
+
+
+/* Media Query */
+
+@media (max-width: 625px) {
+    .container {
+        display: grid;
+        grid-template-columns: 290px;
+        justify-content: center;
+        margin: 3vh auto;
+    }
+
+    .ui-2 {
+        padding: 1rem 10% 3.8rem;
+    }
 }
