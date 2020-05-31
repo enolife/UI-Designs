@@ -45,13 +45,13 @@ nav {
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: space-between;
+    padding: 4px 9px .9rem;
 }
 
 nav,
 .header-container {
     background: var(--blue-bg);
     color: #fff;
-    padding: 4px 9px;
 }
 
 .left-icons,
