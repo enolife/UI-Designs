@@ -1,3 +1,9 @@
+:root {
+    --main-bg: hsl(231, 35%, 93%);
+    --blue-bg: hsl(227, 67%, 23%);
+    --ui-grey: hsl(224, 38%, 94%);
+}
+
 html {
     box-sizing: border-box;
 }
@@ -10,7 +16,128 @@ html {
 }
 
 body {
-    font-family: 'Muli', sans-serif;
+    background: var(--main-bg);
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background: var(--ui-grey);
+    width: 90%;
+    max-width: 320px;
+    margin: 15vh auto 5vh;
+    box-shadow: 0 21px 40px 0 hsla(207, 35%, 42%, 0.175);
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav,
+.header-container {
+    background: var(--blue-bg);
+    color: #fff;
+    padding: 4px 9px;
+}
+
+.left-icons,
+.right-icons {
+    width: 4.7rem;
+    height: auto;
+}
+
+#displayTime {
+    font-size: .71rem;
+}
+
+.header-container {
+    padding-bottom: 4.4rem;
+}
+
+.header-items {
+    display: flex;
+    padding: 0 1.3rem;
+}
+
+.header-items img {
+    width: 1rem;
+    height: auto;
+    margin-right: .95rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.header-items img:hover {
+    transform: scale(1.2);
+}
+
+.header-items h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.settings-body {
+    padding-bottom: 1.4rem;
+}
+
+.settings-items {
+    background: #fff;
+    border-radius: 5px;
+    width: 87%;
+    margin: 0 auto;
+    padding: 1.4rem 2rem 3rem;
+    position: relative;
+    margin-top: -3rem;
+}
+
+.settings-items ul {
+    padding: 0;
+}
+
+.settings-items>ul>a {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 300ms linear;
+}
+
+.settings-items>ul>a:hover {
+    background: hsla(225, 92%, 86%, 0.178);
+}
+
+.settings-items>ul>a:nth-child(-n+7)>li>img {
+    width: 1.15rem;
+    height: auto;
+    margin-right: 8px;
+}
+
+.settings-items>ul li {
+    display: flex;
+    font-size: .84rem;
+    font-weight: 500;
+}
+
+
+/* Media Query */
+
+@media (max-width: 420px) {
+    .container {
+        margin: 2vh auto 5vh;
+    }
 }
