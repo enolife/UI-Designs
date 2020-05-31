@@ -129,11 +129,17 @@ nav,
 .settings-items>ul>a:nth-child(-n+7)>li>img {
     width: 1.15rem;
     height: auto;
-    margin-right: 8px;
+    margin-right: 4px;
+}
+
+.settings-items>ul>a:nth-child(-n+7)>li>p {
+    margin: 0;
+    display: inline-block;
+    vertical-align: 5px;
+    */
 }
 
 .settings-items>ul li {
-    display: flex;
     font-size: .84rem;
     font-weight: 500;
 }
