@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'BlissPro-ExtraLight';
+    src: url('./fonts/BlissPro-ExtraLight.woff') format('woff'), url('./fonts/BlissPro-ExtraLight.svg#BlissPro-ExtraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro-Light';
+    src: url('./fonts/BlissPro-Light.woff') format('woff'), url('./fonts/BlissPro-Light.svg#BlissPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     box-sizing: border-box;
 }
@@ -7,4 +22,217 @@ html {
 *:after {
     box-sizing: inherit;
     -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1591347437/norway-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'BlissPro-Light';
+    margin: 0;
+    padding: 0 0;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    align-items: center;
+    background: hsla(238, 44%, 11%, 0.623);
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 5.5%;
+    white-space: nowrap;
+}
+
+.logo {
+    z-index: 2;
+}
+
+.logo .logo-text {
+    font-family: 'Merienda', cursive;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 1rem 0 0;
+}
+
+input:checked~.nav-links {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links>span:nth-child(-n+4) {
+    margin-right: 3vw;
+}
+
+.nav-links span>a:nth-child(1)>p {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.nav-links span>a:nth-child(2)>p {
+    margin-top: 0;
+}
+
+.logo>p:nth-child(2) {
+    font-size: 1rem;
+    margin-top: 0;
+    position: relative;
+    top: -.6rem;
+    left: 2.3rem;
+}
+
+.nav-links span>a:nth-child(2)>p,
+.logo>p:nth-child(2),
+.hero--small_text,
+.call-to-action>p:nth-child(n+2) {
+    font-family: 'BlissPro-ExtraLight';
+    -webkit-text-stroke: .40px hsla(238, 44%, 11%, 0.623);
+}
+
+.hero {
+    padding: 0 5.5%;
+}
+
+.hero--large_text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 5.3rem;
+    width: 10ch;
+    margin: .6em 0 .35rem;
+    line-height: 1.2;
+}
+
+.hero--small_text {
+    font-size: 1.3rem;
+    width: 45ch;
+    line-height: 1.4;
+    margin-bottom: 4.3rem;
+}
+
+.btn {
+    font-size: 1.15rem;
+    width: 13%;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    background: transparent;
+    padding: .8rem 4px;
+    outline: none;
+    white-space: nowrap;
+}
+
+.btn:focus,
+.btn:hover {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.call-to-action {
+    background: hsla(227, 46%, 8%, 0.575);
+    font-size: 1.2rem;
+    width: fit-content;
+    margin-left: auto;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: right;
+    position: absolute;
+    line-height: .8;
+    bottom: 1.8rem;
+    right: 2.5rem;
+    cursor: pointer;
+}
+
+.call-to-action>p:nth-child(n+2) {
+    font-family: 'BlissPro-ExtraLight';
+}
+
+.call-to-action>p:nth-child(3)>span {
+    font-family: 'BlissPro-Light';
+}
+
+/* Media Query */
+
+@media (max-width: 1580px) {
+    .hero--large_text {
+        font-size: calc(1.2vw + 3.5rem);
+    }
+
+    .hero--small_text {
+        font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+        width: 40ch;
+    }
+
+    .btn {
+        width: 14%;
+    }
+}
+
+@media (max-width: 860px) {
+    nav {
+        padding: 0 5.5%;
+    }
+
+    nav label {
+        padding: .1rem;
+        background: red;
+        padding: .5rem 1.3rem .5rem .5rem;
+    }
+
+    .hamburger-wrapper {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .hamburger-wrapper span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        top: -21px;
+    }
+
+    .nav-links {
+        display: block;
+        position: absolute;
+        background: rgba(3, 1, 12, 0.96);
+        right: 0;
+        width: 100%;
+        text-align: center;
+        top: 0;
+    }
+
+    .nav-links>span:nth-child(-n+4) {
+        margin-right: 0;
+    }
+
+    .hero--large_text {
+        font-size: calc(1.2vw + 2.8rem);
+    }
+
+    .hero--small_text {
+        font-size: 1.05rem;
+        width: 85%;
+        max-width: 400px;
+        -webkit-text-stroke: #fff;
+    }
+
+    .call-to-action {
+        background: hsla(227, 46%, 8%, 0.575);
+        font-size: .85rem;
+    }
+
+    .btn {
+        width: 8rem;
+        padding: .6rem 4px;
+    }
 }
