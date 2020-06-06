@@ -278,7 +278,7 @@ input[type=checkbox] {
     }
 
     input[type=checkbox]:checked:hover~.hamburger-wrapper>span:nth-child(3) {
-        transform: translateY(-4px) translateX(0) rotate(-45deg);
+        transform: translateY(-10px) translateX(0) rotate(-45deg);
     }
 
     /* toggle rotate effect */
@@ -349,6 +349,10 @@ input[type=checkbox] {
 /* Smaller screens */
 
 @media (max-width: 420px) {
+    body {
+        height: 100vh;
+    }
+
     nav {
         margin-bottom: 2.5rem;
     }
