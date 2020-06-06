@@ -26,8 +26,8 @@ html {
 }
 
 body {
-    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1591347437/norway-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1591347437/norway-bg.jpg")no-repeat center center fixed, url("https://res.cloudinary.com/dvhndpbun/image/upload/q_12/v1591347437/norway-bg.jpg") no-repeat center center fixed;
+    background-size: cover, cover;
     font-family: 'BlissPro-Light';
     margin: 0;
     padding: 0 0;
@@ -39,6 +39,10 @@ a {
     color: inherit;
 }
 
+.lazy-load {
+    display: none;
+}
+
 nav {
     align-items: center;
     background: hsla(238, 44%, 11%, 0.623);
@@ -46,6 +50,7 @@ nav {
     justify-content: space-between;
     padding: .6rem 5.5%;
     white-space: nowrap;
+    position: relative;
 }
 
 .logo {
@@ -61,11 +66,6 @@ nav {
 
 input[type=checkbox] {
     display: none;
-    outline: none;
-    width: 0;
-    height: 0;
-    border: none;
-    opacity: 0;
 }
 
 .nav-links {
@@ -115,7 +115,6 @@ input[type=checkbox] {
     transform: scale(1.05);
     -webkit-text-stroke: 0 hsla(0, 0%, 100%, 0.623);
     cursor: pointer;
-
 }
 
 .logo>p:nth-child(2) {
@@ -230,11 +229,17 @@ input[type=checkbox] {
         flex-direction: column;
         padding: 5.5rem 0 4rem;
         opacity: 1;
-        pointer-events: none;
     }
 
     input[type=checkbox] {
-        display: none;
+        right: 6.5%;
+        position: absolute;
+        display: block;
+        z-index: 3;
+        transform: scale(2.5);
+        top: 40%;
+        opacity: 0;
+        cursor: pointer;
     }
 
     .hamburger-wrapper {
@@ -255,15 +260,23 @@ input[type=checkbox] {
     }
 
     /* hamburger hover effect */
-    .hamburger-wrapper:hover :nth-child(1),
-    .hamburger-wrapper:focus :nth-child(1) {
+    input[type=checkbox]:hover~.hamburger-wrapper>span:nth-child(1) {
         transform: translateY(-2px);
         background: #b84642;
     }
 
-    .hamburger-wrapper:hover :nth-child(3),
-    .hamburger-wrapper:focus :nth-child(3) {
+    input[type=checkbox]:hover~.hamburger-wrapper>span:nth-child(3) {
         transform: translateY(2px);
+    }
+
+    /* hamburger hover effect when it has been clicked ----- Used to fix 
+    disparity when hambuger is clicked but the hover state is still on the hidden checkbox */
+    input[type=checkbox]:checked:hover~.hamburger-wrapper>span:nth-child(1) {
+        transform: translateY(10px) translateX(0) rotate(45deg);
+    }
+
+    input[type=checkbox]:checked:hover~.hamburger-wrapper>span:nth-child(3) {
+        transform: translateY(-4px) translateX(0) rotate(-45deg);
     }
 
     /* toggle rotate effect */
@@ -297,11 +310,6 @@ input[type=checkbox] {
         margin-right: 0;
         margin-bottom: 2rem;
         padding: 0;
-    }
-
-    .nav-links>span:nth-child(-n+5)>a,
-    .nav-links>span:nth-child(-n+5)>div>a {
-        pointer-events: all;
     }
 
     .nav-links>span:nth-child(-n+5):hover {
