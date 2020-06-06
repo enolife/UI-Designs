@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1591347437/norway-bg.jpg")no-repeat center center fixed, url("https://res.cloudinary.com/dvhndpbun/image/upload/q_12/v1591347437/norway-bg.jpg") no-repeat center center fixed;
+    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:low/v1591347437/norway-bg.jpg")no-repeat center center fixed, url("https://res.cloudinary.com/dvhndpbun/image/upload/q_5/v1591347437/norway-bg.jpg") no-repeat center center fixed;
     background-size: cover, cover;
     font-family: 'BlissPro-Light';
     margin: 0;
@@ -185,6 +185,7 @@ input[type=checkbox] {
     bottom: 1.8rem;
     right: 2.5rem;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .call-to-action>p:nth-child(n+2) {
