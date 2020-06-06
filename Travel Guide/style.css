@@ -367,6 +367,18 @@ input[type=checkbox] {
         transform: translateY(-4.5px) translateX(0) rotate(-45deg);
     }
 
+    .nav-links>span:nth-child(-n+5) {
+        margin-bottom: .8rem;
+    }
+
+    .nav-links>span:nth-child(-n+5)>a {
+        font-size: 1rem;
+    }
+
+    .nav-links>span:nth-child(-n+5)>div>a {
+        font-size: .9rem;
+    }
+
     .hero--large_text {
         font-size: 2.3rem;
         -webkit-text-stroke: .3px rgb(12, 9, 75);
