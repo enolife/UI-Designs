@@ -278,7 +278,7 @@ input[type=checkbox] {
     }
 
     input[type=checkbox]:checked:hover~.hamburger-wrapper>span:nth-child(3) {
-        transform: translateY(-10px) translateX(0) rotate(-45deg);
+        transform: translateY(-6px) translateX(0) rotate(-45deg);
     }
 
     /* toggle rotate effect */
@@ -370,7 +370,11 @@ input[type=checkbox] {
     }
 
     input[type=checkbox]:checked~.hamburger-wrapper :nth-child(3) {
-        transform: translateY(-4.5px) translateX(0) rotate(-45deg);
+        transform: translateY(-4px) translateX(0) rotate(-45deg);
+    }
+
+    input[type=checkbox]:checked:hover~.hamburger-wrapper>span:nth-child(3) {
+        transform: translateY(-4px) translateX(0) rotate(-45deg);
     }
 
     .nav-links>span:nth-child(-n+5) {
