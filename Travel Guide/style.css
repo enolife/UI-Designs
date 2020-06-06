@@ -368,17 +368,6 @@ input[type=checkbox] {
         height: 2px;
     }
 
-    .hamburger-wrapper:hover :nth-child(1),
-    .hamburger-wrapper:focus :nth-child(1) {
-        transform: translateY(-1px);
-        background: #b84642;
-    }
-
-    .hamburger-wrapper:hover :nth-child(3),
-    .hamburger-wrapper:focus :nth-child(3) {
-        transform: translateY(1px);
-    }
-
     input[type=checkbox]:checked~.hamburger-wrapper :nth-child(3) {
         transform: translateY(-4.5px) translateX(0) rotate(-45deg);
     }
