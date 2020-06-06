@@ -349,9 +349,6 @@ input[type=checkbox] {
 /* Smaller screens */
 
 @media (max-width: 420px) {
-    body {
-        height: 100vh;
-    }
 
     nav {
         margin-bottom: 2.5rem;
