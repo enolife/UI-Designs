@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: hsl(356, 63%, 42%);
+    color: hsl(345, 5%, 71%);
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: hsl(340, 21%, 11%);
+    width: 90%;
+    max-width: 800px;
+    padding: 4% 8% 5%;
+    margin: 12vh auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 32px 23px -20px hsl(357, 92%, 15%);
+}
+
+.card {
+    width: 200px;
+    padding: 5% 0 10%;
+}
+
+.card--plan_type h3 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.card--price>p:nth-child(1) {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.card--price>p:nth-child(2) {
+    font-size: .78rem;
+    margin: 3px 0 2.3rem;
+}
+
+ul {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card--plan_features li {
+    font-size: .85rem;
+    line-height: 1.9;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.start-btn {
+    border: 1px solid hsl(356, 63%, 42%);
+    background: transparent;
+    border-radius: 4px;
+    color: hsl(356, 63%, 42%);
+}
+
+.start-btn:focus,
+.start-btn:hover {
+    background: #fff;
+    color: hsl(340, 21%, 11%);
+    border: 1px solid #fff;
+}
+
+.try-btn {
+    border-radius: 4px;
+    background: hsl(356, 63%, 42%);
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.try-btn:focus,
+.try-btn:hover {
+    background: hsl(357, 72%, 31%);
+}
+
+.divider {
+    display: block;
+    border-left: 1px solid hsl(339, 18%, 15%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 3vh auto;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .card {
+        margin: 0 auto;
+        padding: 5% 0 20%;
+    }
+
+    .card:nth-child(1) {
+        padding: 5% 0 30%;
+        border-bottom: 1px solid hsl(338, 18%, 21%);
+    }
+
+    .divider {
+        display: none;
+    }
+}
