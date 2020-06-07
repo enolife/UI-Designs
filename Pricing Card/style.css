@@ -66,6 +66,7 @@ ul {
     border: none;
     cursor: pointer;
     transition: all 300ms ease;
+    outline: none;
 }
 
 .start-btn {
@@ -100,6 +101,7 @@ ul {
 
 @media (max-width: 600px) {
     .container {
+        width: 85%;
         margin: 3vh auto;
         flex-direction: column;
         justify-items: center;
