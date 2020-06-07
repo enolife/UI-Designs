@@ -105,6 +105,7 @@ ul {
         margin: 3vh auto;
         flex-direction: column;
         justify-items: center;
+        box-shadow: none;
     }
 
     .card {
