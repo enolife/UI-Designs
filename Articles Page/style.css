@@ -192,7 +192,6 @@ nav li:hover {
 }
 
 @media (max-width: 923px) {
-    .container {}
 
     .recent-articles {
         padding-top: 0;
