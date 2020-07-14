@@ -27,8 +27,34 @@ a {
     grid-gap: 2.6rem;
     width: 90%;
     max-width: 990px;
-    margin: 4vh auto;
+    margin: 7vh auto;
     padding: 6rem 5.5%;
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    position: absolute;
+    padding: .65rem 0;
+    width: 90%;
+    background: hsl(249, 42%, 31%);
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.container:before {
+    top: -1.3rem;
+}
+
+.container:after {
+    bottom: -1.3rem;
+}
+
+.card-text {
+    margin-bottom: 4rem;
 }
 
 .card-text h1 {
@@ -45,10 +71,10 @@ a {
 }
 
 .card-stats {
-    background:
-        linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)) no-repeat center,
-        linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)) no-repeat center;
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)) no-repeat center, linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)) no-repeat center;
     background-size: 100% 2px, 2px 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .top-stats,
@@ -56,12 +82,12 @@ a {
     display: flex;
 }
 
-
 .top-stats-one,
 .top-stats-two,
 .bottom-stats-one,
 .bottom-stats-two {
     display: grid;
+    grid-template-rows: auto 1fr;
     justify-content: center;
     width: 100%;
 }
@@ -80,7 +106,7 @@ a {
 .card-stats p {
     font-size: .65rem;
     text-transform: uppercase;
-    margin: 0 0 1rem;
+    margin: 0;
     opacity: .85;
 }
 
@@ -89,4 +115,53 @@ a {
     background: hsla(0, 0%, 100%, 0.079);
     text-transform: uppercase;
     font-size: .85rem;
+}
+
+
+/* Media Query*/
+
+@media (max-width: 420px) {
+    .container {
+        grid-gap: 2.6rem;
+        width: 95%;
+        margin: 2vh auto 0;
+        padding: 4rem 2% 8rem;
+        overflow-x: hidden;
+    }
+
+    .container:before,
+    .container:after {
+        display: none;
+    }
+
+    .card-text h1 {
+        font-size: calc(1.7rem + ((1vw - 0.2625rem) * 1.5238));
+        min-height: 0vw;
+    }
+
+    .card-text p {
+        font-size: calc(0.83rem + ((1vw - 0.2625rem) * 0.4571));
+        min-height: 0vw;
+        max-width: 34ch;
+        width: 80%;
+    }
+
+    .card-stats h2 {
+        font-size: calc(1.8rem + ((1vw - 0.2625rem) * 10.6667));
+        min-height: 0vw;
+    }
+
+    .card-stats p {
+        font-size: calc(0.55rem + ((1vw - 0.2625rem) * 0.7619));
+        min-height: 0vw;
+    }
+
+    .btn {
+        padding: 1rem 1rem;
+        font-size: .6rem;
+    }
+
+    .card-text {
+        margin-bottom: 3rem;
+    }
 }
