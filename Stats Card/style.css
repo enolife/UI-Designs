@@ -23,7 +23,7 @@ a {
 .container {
     background: linear-gradient(223deg, hsl(239, 55%, 64%), hsl(261, 37%, 46%), hsl(261, 32%, 38%), hsl(261, 32%, 38%));
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
     grid-gap: 2.6rem;
     width: 90%;
     max-width: 990px;
