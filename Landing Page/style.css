@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/v1594821180/aerial-swimming-sea.jpg")no-repeat center center;
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Muli', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background: #fff;
+    color: hsla(245, 41%, 16%, 0.78);
+    display: flex;
+    font-size: .9rem;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 1.1rem 1rem;
+    margin-bottom: 13rem;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links_wrapper {
+    display: flex;
+}
+
+.nav-links_wrapper li {
+    margin-right: 2.3rem;
+}
+
+.btn {
+    color: #fff;
+    text-align: center;
+}
+
+.signin-btn {
+    background: hsl(185, 62%, 51%);
+    border-radius: 5px;
+    padding: 1.3rem 1.8rem;
+}
+
+.hero {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.1rem;
+    width: 85%;
+    max-width: 26ch;
+}
