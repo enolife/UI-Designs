@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    height: 100%;
 }
 
 *,
@@ -14,8 +13,8 @@ body {
     background-size: cover;
     color: hsl(0, 0%, 100%);
     font-family: 'Muli', sans-serif;
-    height: 100%;
     margin: 0;
+
 }
 
 a {
@@ -31,11 +30,11 @@ ul {
     background: #fff;
     color: hsla(245, 41%, 16%, 0.78);
     display: flex;
-    font-size: .9rem;
+    font-size: calc(0.9rem + ((1vw - 1rem) * 0.1387));
+    min-height: 0vw;
     font-weight: 700;
     justify-content: space-between;
-    padding: 1.1rem 1rem;
-    margin-bottom: 13rem;
+    padding: 1.1rem 1rem 1.1rem 0;
 }
 
 .right-nav {
@@ -51,25 +50,279 @@ ul {
     margin-right: 2.3rem;
 }
 
+.nav-links_wrapper li:hover {
+    opacity: .7;
+}
+
 .btn {
     color: #fff;
     text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-.signin-btn {
+.signup-btn {
     background: hsl(185, 62%, 51%);
     border-radius: 5px;
     padding: 1.3rem 1.8rem;
 }
 
+.signup-btn:hover,
+.signup-btn:focus {
+    background: hsl(185, 74%, 60%);
+}
+
+
+main {
+    background: hsla(185, 100%, 28%, 0.34);
+    padding-top: 9rem;
+}
+
+
 .hero {
-    width: 80%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 0 auto 14rem;
 }
 
 .hero-text h1 {
     font-family: 'Merriweather', serif;
-    font-size: 2.1rem;
+    font-size: calc(2.5rem + ((1vw - 1rem) * 1.2364));
+    min-height: 0vw;
     width: 85%;
     max-width: 26ch;
+    line-height: 1.45;
+}
+
+.hero-input {
+    display: flex;
+}
+
+.location-input {
+    width: 30%;
+    position: relative;
+}
+
+.date-input {
+    width: 25%;
+    position: relative;
+}
+
+.hero-input input {
+    border: none;
+    height: 3.8rem;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.location-icon,
+.date-icon {
+    position: absolute;
+    z-index: 2;
+    top: 33%;
+    left: 25px;
+    width: 21px;
+
+}
+
+
+input[type=text],
+.input-date {
+    padding: 0 0 0 4.3rem;
+    font-family: 'Muli', sans-serif;
+    outline: none;
+}
+
+input[type=text]:hover,
+.input-date:hover,
+input[type=text]:focus,
+.input-date:focus {
+    background: rgb(238, 238, 238);
+}
+
+
+
+.input-date {
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+::-webkit-calendar-picker-indicator {
+    background: yellow;
+    position: absolute;
+    left: .38rem;
+    z-index: 3;
+    opacity: 0;
+}
+
+.search-btn {
+    background: hsl(22, 92%, 66%);
+    padding: 0 1.8rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+    background: hsl(22, 76%, 55%);
+}
+
+.landing-places_hz {
+    background: #fff;
+    color: hsl(245, 41%, 16%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 96%;
+    margin: 0 auto 3rem;
+    padding: 1rem .5rem 2.2rem .5rem;
+    border-radius: 11px;
+}
+
+
+.place {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.place:hover {
+    background: rgba(247, 247, 247, 0.856);
+}
+
+.badge {
+    align-items: center;
+    background: hsl(240, 43%, 96%);
+    display: inline-flex;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+.badge img {
+    margin-right: .55rem;
+    width: 14.5px;
+}
+
+.place-title h2 {
+    font-family: 'Merriweather', serif;
+    font-size: calc(1.4rem + ((1vw - 1rem) * 1.1561));
+    min-height: 0vw;
+    line-height: 1.6;
+    max-width: 22ch;
+}
+
+.place-title pre {
+    margin: 0;
+}
+
+.place p {
+    color: hsl(245, 11%, 41%);
+    font-size: 1rem;
+}
+
+.badge p {
+    font-size: calc(0.85rem + ((1vw - 1rem) * 0.4624));
+    min-height: 0vw;
+    margin: 0;
+}
+
+
+/* Media breakpoint */
+
+@media (max-width:908px) {
+
+    .nav-links_wrapper li {
+        margin-right: 2rem;
+    }
+
+    .hero-text h1 {
+        width: 98%;
+    }
+
+    .location-input {
+        width: 60%;
+    }
+
+    .date-input {
+        display: none;
+    }
+}
+
+
+@media (max-width:420px) {
+
+    .navbar {
+        font-size: .76rem;
+        padding: .6rem 1rem .6rem 0;
+    }
+
+    .nav-links_wrapper {
+        display: flex;
+        padding-left: 15px;
+    }
+
+    .nav-links_wrapper li {
+        margin-right: .65rem;
+    }
+
+    .signup-btn {
+        margin-left: 8%;
+        padding: .9rem .5rem;
+    }
+
+
+    main {
+
+        padding-top: 4rem;
+    }
+
+    .hero {
+        margin: 0 auto 7rem;
+        width: 88%;
+    }
+
+    .hero-text h1 {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-input input {
+        height: 3.1rem;
+    }
+
+    .location-input {
+        width: 70%;
+    }
+
+    .location-icon,
+    .date-icon {
+        width: 19px;
+        top: 29%;
+    }
+
+    input[type=text],
+    .input-date {
+        padding: 0 0 0 3.5rem;
+    }
+
+    ::placeholder {
+        font-size: calc(0.76rem + ((1vw - 0.2625rem) * 1.76));
+        min-height: 0vw;
+    }
+
+    .landing-places_hz {
+        flex-wrap: wrap;
+    }
+
+    .landing-places_hz>.place:nth-child(1) {
+        margin: 0 1rem 2rem 0;
+
+    }
+
+    .place-title h2 {
+        font-size: .63rem;
+    }
 }
