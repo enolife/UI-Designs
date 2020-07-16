@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-family: 'Muli', sans-serif;
     margin: 0;
-
+    overflow-x: hidden;
 }
 
 a {
