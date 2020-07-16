@@ -73,12 +73,10 @@ ul {
     background: hsl(185, 74%, 60%);
 }
 
-
 main {
     background: hsla(185, 100%, 28%, 0.34);
     padding-top: 9rem;
 }
-
 
 .hero {
     width: 85%;
@@ -125,9 +123,7 @@ input[type=text] {
     top: 33%;
     left: 25px;
     width: 21px;
-
 }
-
 
 input[type=text],
 .input-date {
@@ -142,8 +138,6 @@ input[type=text]:focus,
 .input-date:focus {
     background: rgb(238, 238, 238);
 }
-
-
 
 .input-date {
     background: #fff;
@@ -182,7 +176,6 @@ input[type=text]:focus,
     padding: 1rem .5rem 2.2rem .5rem;
     border-radius: 11px;
 }
-
 
 .place {
     font-weight: bold;
@@ -234,7 +227,6 @@ input[type=text]:focus,
 /* Media breakpoint */
 
 @media (max-width:908px) {
-
     .nav-links_wrapper li {
         margin-right: 2rem;
     }
@@ -252,9 +244,7 @@ input[type=text]:focus,
     }
 }
 
-
 @media (max-width:420px) {
-
     .navbar {
         font-size: .76rem;
         padding: .6rem 1rem .6rem 0;
@@ -274,9 +264,7 @@ input[type=text]:focus,
         padding: .9rem .5rem;
     }
 
-
     main {
-
         padding-top: 4rem;
     }
 
@@ -320,10 +308,13 @@ input[type=text]:focus,
 
     .landing-places_hz>.place:nth-child(1) {
         margin: 0 1rem 2rem 0;
-
     }
 
     .place-title h2 {
         font-size: .63rem;
+    }
+
+    .place p {
+        font-size: .59rem;
     }
 }
