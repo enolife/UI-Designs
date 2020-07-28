@@ -1,0 +1,214 @@
+@import url(//db.onlinewebfonts.com/c/1bc2daddba36ba331fc4fa67828eabdc?family=Circular+Spotify+Tx+T+Med);
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('./assets/fonts/HelveticaNeue-Bold.woff') format('woff'), url('./assets/fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: #eaede5;
+    color: rgba(6, 1, 37, 0.918);
+    font-family: 'HelveticaNeue-Bold', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 22rem));
+    grid-gap: 3rem;
+    justify-content: center;
+    width: 90%;
+    max-width: 80rem;
+    padding: 1.5% 3%;
+    margin: 0 auto;
+}
+
+.ui {
+    background: #f0f2ec;
+    padding: 0 0 1.35rem;
+    border-radius: 16px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1.6rem;
+}
+
+.left-bar,
+.right-bar {
+    display: flex;
+    align-items: center;
+}
+
+.right-bar {
+    padding: 0;
+}
+
+.status-bar_icons img {
+    width: 1.5rem;
+}
+
+.status-bar_icons>li:nth-child(3)>img {
+    margin-left: .2rem;
+}
+
+.status-bar_icons>li:nth-child(2)>img {
+    width: 1rem;
+    margin-left: .1rem;
+}
+
+header {
+    padding: 0 1.4rem 0 1.6rem;
+}
+
+.menu-icon-wrapper img {
+    width: 1.6rem;
+}
+
+.header-text {
+    width: 17ch;
+    margin-bottom: 1.5rem;
+}
+
+.input-search input {
+    width: 98%;
+    margin: 0 auto 1rem;
+    height: 2.9rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.latest-recipe {
+    padding-left: 1.6rem;
+}
+
+.latest-recipe h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.latest--recipe_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1rem;
+    grid-gap: .6rem;
+    overflow: hidden;
+}
+
+.recipe-card {
+    background: hsla(0, 0%, 100%, 0.568);
+    padding: .9rem .8rem .7rem;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.recipe-card .card-image_wrapper {
+    width: 100%;
+    height: 7rem;
+}
+
+.recipe-card>.card-image_wrapper>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.food-name {
+    font-size: .93rem;
+    margin: 0;
+}
+
+.time-duration {
+    color: #656563;
+    font-family: 'Circular Spotify Tx T Med', sans-serif;
+    font-size: .6rem;
+    white-space: nowrap;
+    opacity: .9;
+}
+
+.card-interaction {
+    display: flex;
+    justify-content: center;
+}
+
+.card-interaction .icon-wrapper {
+    height: 1.6rem;
+    width: 1.6rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.card-interaction .icon-wrapper+.icon-wrapper {
+    margin-left: .34rem;
+}
+
+.icon-wrapper img {
+    width: 66%;
+    height: 66%;
+    object-fit: contain;
+}
+
+.card-interaction>.icon-wrapper:nth-child(1)>img {
+    width: 46%;
+    height: 43%;
+}
+
+.week-recipe {
+    padding: 0 1.4rem 0 1.6rem;
+}
+
+.week-image_wrapper {
+    background: #fff;
+    width: 100%;
+    padding: .7rem 0;
+    position: relative;
+    border-radius: 15px;
+}
+
+.week-image_wrapper img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.version-num {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f9cdbe;
+    padding: .4rem 1.1rem .6rem;
+    border-radius: 0 15px;
+}
+
+.version-num p {
+    color: hsla(0, 48%, 13%, 0.38);
+    margin: 0;
+    font-size: .9rem;
+}
