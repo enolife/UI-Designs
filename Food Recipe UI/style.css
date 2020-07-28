@@ -64,6 +64,10 @@ ul {
     align-items: center;
 }
 
+.left-bar p {
+    font-size: .9rem;
+}
+
 .right-bar {
     padding: 0;
 }
@@ -90,8 +94,9 @@ header {
 }
 
 .header-text {
+    font-size: 1.7rem;
     width: 17ch;
-    margin-bottom: 1.5rem;
+    margin: .65rem 0 1.5rem;
 }
 
 .input-search input {
@@ -168,6 +173,10 @@ header {
     margin-left: .34rem;
 }
 
+.card-interaction .icon-wrapper:hover {
+    background: hsla(343, 100%, 57%, 0.11);
+}
+
 .icon-wrapper img {
     width: 66%;
     height: 66%;
@@ -177,6 +186,10 @@ header {
 .card-interaction>.icon-wrapper:nth-child(1)>img {
     width: 46%;
     height: 43%;
+}
+
+.card-interaction .icon-wrapper:hover .heart-icon {
+    filter: invert(24%) sepia(63%) saturate(3179%) hue-rotate(326deg) brightness(100%) contrast(102%);
 }
 
 .week-recipe {
