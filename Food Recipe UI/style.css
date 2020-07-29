@@ -90,7 +90,7 @@ header {
 }
 
 .menu-icon-wrapper img {
-    width: 1.6rem;
+    width: 1.32rem;
 }
 
 .header-text {
@@ -100,12 +100,22 @@ header {
 }
 
 .input-search input {
+    background: url("./assets/img/filter-icon.svg") no-repeat 14.4rem 1px, url("./assets/img/search-icon.svg") no-repeat .7rem #fff;
+    background-size: 3.25rem, 2rem;
     width: 98%;
     margin: 0 auto 1rem;
-    height: 2.9rem;
+    height: 2.95rem;
     border-radius: 50px;
     border: none;
+    padding: 0 3.1rem;
+    box-shadow: 0 13px 15px hsla(0, 0%, 0%, 0.040);
+    outline: none;
 }
+
+::placeholder {
+    color: rgb(158, 158, 158);
+}
+
 
 .latest-recipe {
     padding-left: 1.6rem;
@@ -128,6 +138,7 @@ header {
     padding: .9rem .8rem .7rem;
     border-radius: 14px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .recipe-card .card-image_wrapper {
@@ -142,7 +153,7 @@ header {
 }
 
 .food-name {
-    font-size: .93rem;
+    font-size: .9rem;
     margin: 0;
 }
 
