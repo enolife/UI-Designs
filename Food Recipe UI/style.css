@@ -1,4 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/1bc2daddba36ba331fc4fa67828eabdc?family=Circular+Spotify+Tx+T+Med);
+@font-face {
+    font-family: "Circular Spotify Tx T Med";
+    src: url("./assets/fonts/Circular-Spotify-tx.woff") format("woff"), url("./assets/fonts/Circular-Spotify-tx.ttf") format("truetype");
+}
 
 @font-face {
     font-family: 'HelveticaNeue-Bold';
@@ -6,6 +9,25 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('./assets/fonts/Futura-Book.woff2') format('woff2'), url('./assets/fonts/Futura-Book.woff') format('woff'), url('./assets/fonts/Futura-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura-Md';
+    src: url('./assets/fonts/FuturaBT-Medium.woff2') format('woff2'), url('./assets/fonts/FuturaBT-Medium.woff') format('woff'), url('./assets/fonts/FuturaBT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 html {
     box-sizing: border-box;
@@ -116,7 +138,6 @@ header {
     color: rgb(158, 158, 158);
     font-size: .8rem;
 }
-
 
 .latest-recipe {
     padding-left: 1.6rem;
@@ -242,7 +263,6 @@ header {
 }
 
 
-
 /* Second UI */
 
 .recipe-splash {
@@ -265,14 +285,11 @@ header {
     padding: 1.5rem 0 0 1.45rem;
 }
 
-
 .difficulty-details {
     display: flex;
     justify-content: space-between;
     padding-right: 2.35rem;
 }
-
-
 
 .difficulty-details h2 {
     font-size: 1rem;
@@ -285,7 +302,6 @@ header {
     padding: .28rem 0 .3rem;
     width: 90%;
     margin-right: auto;
-
 }
 
 .prep-stage {
@@ -365,4 +381,63 @@ header {
     font-family: 'Circular Spotify Tx T Med', sans-serif;
     font-size: .65rem;
     margin: .6rem 0 0;
+}
+
+
+/* Third UI */
+
+.recipe-story_splash {
+    width: 100%;
+    margin-top: 1.7rem;
+}
+
+.recipe-story_splash img {
+    width: 73%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 2px;
+}
+
+.kitchen-story {
+    background: #fff;
+    text-align: center;
+    padding: 3.2rem 2rem 3rem;
+    border-radius: 0 0 16px 16px;
+}
+
+.kitchen-story h1 {
+    font-family: 'Futura-Md', sans-serif;
+    font-size: 1.44rem;
+    margin: 0;
+    opacity: .9;
+}
+
+.kitchen-story p {
+    color: rgb(111 111 111);
+    font-size: 1.05rem;
+    font-family: 'Futura-Book', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 2.8rem;
+    width: 100%;
+    max-width: 27ch;
+}
+
+.add-story {
+    width: 19%;
+    margin: 0 auto;
+}
+
+.add-story img {
+    width: 100%;
+}
+
+@media (max-width: 365px) {
+    .recipe-splash {
+        height: 14rem;
+    }
+
+    .recipe-splash img {
+        object-fit: contain;
+    }
 }
