@@ -258,8 +258,7 @@ header {
 
 .recipe-details {
     background: hsla(0, 0%, 100%, 0.568);
-
-    border-radius: 33px 33px 0 0;
+    border-radius: 33px 33px 16px 16px;
 }
 
 .recipe-details_top {
@@ -338,7 +337,7 @@ header {
 .recipe-details_bottom {
     background: rgba(255, 255, 255, 0.644);
     padding: 1.1rem 2rem 1.9rem 1.45rem;
-    border-radius: 38px 38px 0 0;
+    border-radius: 38px 38px 16px 16px;
 }
 
 .nutrition-details h4 {
