@@ -8,4 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-ini
+body {
+    background: hsl(249, 42%, 91%);
+}
