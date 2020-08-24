@@ -10,6 +10,7 @@ html {
 
 body {
     background: hsl(220, 60%, 98%);
+    color: hsl(226, 35%, 19%);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,7 +20,35 @@ a {
 }
 
 .screensize-card {
-    width: 80%;
-    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 430px;
     margin: 10vh auto 0;
+    box-shadow: 0 45px 67px -50px hsla(228, 49%, 52%, 0.445);
+    padding: 3rem 3.6% 2.5rem;
+    text-align: center;
+}
+
+.card-header img {
+    width: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-image img {
+    width: 6.3rem;
+}
+
+.card-title h1 {
+    font-size: 1.05rem;
+}
+
+.card-info p {
+    font-size: .88rem;
+    margin-bottom: 8rem;
+}
+
+.card-footer a {
+    font-size: .75rem;
+    opacity: .65;
 }
