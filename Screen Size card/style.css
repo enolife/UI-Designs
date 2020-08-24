@@ -17,3 +17,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.screensize-card {
+    width: 80%;
+    max-width: 300px;
+    margin: 10vh auto 0;
+}
