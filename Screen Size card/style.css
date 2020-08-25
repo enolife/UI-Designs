@@ -53,3 +53,17 @@ a {
     font-size: .75rem;
     opacity: .65;
 }
+
+@media (max-width: 420px) {
+    .screensize-card {
+        margin-top: 4vh;
+    }
+
+    .card-title h1 {
+        font-size: .93rem;
+    }
+
+    .card-info p {
+        font-size: .8rem;
+    }
+}
