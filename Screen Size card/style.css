@@ -26,13 +26,13 @@ a {
     max-width: 430px;
     margin: 10vh auto 0;
     box-shadow: 0 45px 67px -50px hsla(228, 49%, 52%, 0.445);
-    padding: 3rem 3.6% 2.5rem;
+    padding: 3.8rem 3.6% 2.5rem;
     text-align: center;
 }
 
 .card-header img {
     width: 10rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.8rem;
 }
 
 .card-image img {
@@ -46,6 +46,7 @@ a {
 .card-info p {
     font-size: .88rem;
     margin-bottom: 8rem;
+    line-height: 1.7;
 }
 
 .card-footer a {
