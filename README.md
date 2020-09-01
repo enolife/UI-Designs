@@ -1,4 +1,4 @@
-This repo contains UI designs that I have replicated while learning...
+This repo contains UI designs that I have replicated while learning.
 
 .
 
