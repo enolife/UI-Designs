@@ -11,10 +11,14 @@ html {
 body {
     background: hsl(220, 60%, 98%);
     color: hsl(226, 35%, 19%);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h1 {
+    font-weight: 500;
 }
