@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: hsl(220, 60%, 98%);
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.8rem
+}
+
+
+.left-nav,
+.right-nav {
+    align-items: center;
+    padding: 1.1rem 0;
+}
+
+.left-nav {
+    width: 100%
+}
+
+.logo-wrapper img {
+    width: 3.2rem
+}
+
+.right-nav {
+    background: hsl(249, 74%, 29%);
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    padding-right: 1.8rem;
+
+}
+
+.container {}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right-hero {
+    background: url('https://api-lunacy.icons8.com/api/assets/e64fa8b6-697f-4f5c-a1be-e20934896c90/Group-21.png') no-repeat center center;
+    background-size: cover;
+}
+
+.left-hero {
+    padding: 5rem 8rem 0;
+}
+
+.left-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
