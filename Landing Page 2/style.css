@@ -55,17 +55,19 @@ nav {
 .container {}
 
 .hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    height: 85vh;
 }
 
 .right-hero {
-    background: url('https://api-lunacy.icons8.com/api/assets/e64fa8b6-697f-4f5c-a1be-e20934896c90/Group-21.png') no-repeat center center;
-    background-size: cover;
+    border: 1px solid blue;
+    width: 100%;
+
 }
 
 .left-hero {
     padding: 5rem 8rem 0;
+    border: 1px solid red;
 }
 
 .left-hero h1 {
