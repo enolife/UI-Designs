@@ -61,14 +61,24 @@ nav {
 
 .right-hero {
     border: 1px solid blue;
-    width: 100%;
+    width: 90%;
 
+}
+
+.right-hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .left-hero {
     padding: 5rem 8rem 0;
     border: 1px solid red;
+    width: 100%;
+    height: 100%;
 }
+
+
 
 .left-hero h1 {
     font-size: 3.5rem;
