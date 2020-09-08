@@ -1,86 +1,113 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    background: hsl(220, 60%, 98%);
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
+  color: rgb(15, 15, 43);
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav {
-
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1.8rem
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.8rem;
 }
-
 
 .left-nav,
 .right-nav {
-    align-items: center;
-    padding: 1.1rem 0;
+  align-items: center;
+  padding: 1.1rem 0;
 }
 
 .left-nav {
-    width: 100%
+  width: 100%;
 }
 
 .logo-wrapper img {
-    width: 3.2rem
+  width: 3.2rem;
 }
 
 .right-nav {
-    background: hsl(249, 74%, 29%);
-    display: flex;
-    width: 75%;
-    justify-content: flex-end;
-    padding-right: 1.8rem;
-
+  background: hsl(249, 74%, 29%);
+  display: flex;
+  width: 75%;
+  justify-content: flex-end;
+  padding-right: 1.8rem;
 }
 
-.container {}
-
 .hero {
-    display: flex;
-    height: 85vh;
+  display: flex;
+  height: 85vh;
 }
 
 .right-hero {
-    border: 1px solid blue;
-    width: 90%;
-
+  width: 93.5%;
 }
 
 .right-hero img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .left-hero {
-    padding: 5rem 8rem 0;
-    border: 1px solid red;
-    width: 100%;
-    height: 100%;
+  padding: 5rem 8rem 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-
 .left-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.left-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 3.1rem;
+  max-width: 39ch;
+  width: 100%;
+}
+
+.btn {
+  background: hsl(249, 60%, 45%);
+  color: #fff;
+  display: inline-flex;
+}
+
+.hero-btn {
+  padding: 1.2rem 1.8rem;
+}
+
+.footer {
+  background: hsl(249, 74%, 29%);
+  color: #fff;
+  padding: 3.5rem 8rem 5.3rem;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-input,
+.footer-cta-message {
+  width: 50%;
+}
+.footer-btn {
+  background: hsl(249, 60%, 45%);
+  padding: 1rem 1.5rem;
 }
