@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    color: rgb(15, 15, 43);
+    background: hsl(210, 30%, 96%);
+    color: hsl(229, 35%, 9%);
     font-family: "Mulish", sans-serif;
     padding: 0;
     margin: 0;
@@ -18,4 +19,88 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.subscribe-card {
+    background: #fff;
+    width: 85%;
+    max-width: 800px;
+    margin: 10vh auto 0;
+    padding: 2.5rem 6.2% 3rem;
+    box-shadow: 0 19px 38px -25px hsla(210, 100%, 62%, 0.223);
+}
+
+.subscribe-card-info {
+    text-align: center;
+}
+
+.subscribe-card-info h1 {
+    font-size: 1.36rem;
+}
+
+.subscribe-card-info p {
+    margin: 1em auto;
+    font-size: .93rem;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 47ch;
+}
+
+.subscribe-card-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0 .8rem;
+}
+
+.subscribe-card-input input[type="email"] {
+    border: 1px solid hsl(208, 19%, 83%);
+    border-radius: 5px;
+    padding-left: 1.6rem;
+    outline: none;
+    width: 62%;
+    height: 3.48rem;
+}
+
+.subscribe-card-input input[type="email"]:focus {
+    border: 1px solid hsl(210, 100%, 62%);
+}
+
+.subscribe-card-input input[type="email"]::placeholder {
+    font-size: .95rem;
+}
+
+.send-btn {
+    background: url('./assets/img/arrow-right.svg') no-repeat 125px center, hsl(210, 100%, 62%);
+    background-size: 33px;
+    color: #fff;
+    padding: 1.1rem 4.8rem;
+    margin-left: 1rem;
+    align-items: center;
+    box-shadow: 0 18px 12px -16px hsl(210, 100%, 62%);
+    outline: none;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    opacity: .7;
+}
+
+
+.subscribe-card-agreement {
+    display: flex;
+    align-items: baseline;
+    width: 53%;
+    margin: 0 auto 0 0;
+}
+
+.subscribe-card-agreement input {
+    transform: scale(1.52);
+}
+
+.subscribe-card-agreement p {
+    font-size: .84rem;
+    line-height: 1.6;
+    margin-left: .5rem;
 }

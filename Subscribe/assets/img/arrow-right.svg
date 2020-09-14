@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(1.25 1.25)">
+    <path d="M0 0L40 0L40 40L0 40L0 0Z" id="Path" fill="none" stroke="none" />
+    <path d="M0 0.833333L23.3333 0.833333" transform="translate(8.333374 19.16669)" id="Path" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 6.66667L6.66667 0" transform="translate(25 20)" id="Path" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L6.66667 6.66667" transform="translate(25 13.33331)" id="Path" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
