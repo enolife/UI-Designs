@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(4.810669 4.810669)">
+    <path d="M22.4231 44.8462C34.807 44.8462 44.8462 34.807 44.8462 22.4231C44.8462 10.0392 34.807 0 22.4231 0C10.0392 0 0 10.0392 0 22.4231C0 34.807 10.0392 44.8462 22.4231 44.8462Z" transform="translate(8.153846 8.153846)" id="Oval-Copy" fill="#A1ABCD" fill-opacity="0.349019617" stroke="none" />
+    <path d="M22.4231 44.8462C34.807 44.8462 44.8462 34.807 44.8462 22.4231C44.8462 10.0392 34.807 0 22.4231 0C10.0392 0 0 10.0392 0 22.4231C0 34.807 10.0392 44.8462 22.4231 44.8462Z" transform="translate(0.6794872 0.6794872)" id="Oval" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M14.4504 2.49429C13.5308 0.898952 11.8062 -0.059127 9.96581 0.00283358L4.98291 0.00283358C2.23092 0.00283358 0 2.23376 0 4.98574C0 7.73772 2.23092 9.96865 4.98291 9.96865L9.96581 9.96865C12.7178 9.96865 14.9487 12.1996 14.9487 14.9516C14.9487 17.7035 12.7178 19.9345 9.96581 19.9345L4.98291 19.9345C3.14251 19.9964 1.41797 19.0383 0.498291 17.443" transform="translate(15.62821 13.13392)" id="Path" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M1.24573 0L1.24573 4.98291M1.24573 24.9145L1.24573 29.8974" transform="translate(21.85684 8.153846)" id="Shape" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

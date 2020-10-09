@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64px" height="61px" viewBox="0 0 64 61" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(3.539917 3.539917)">
+    <path d="M23.6667 44.375L14.7917 35.5L8.875 35.5C3.97347 35.5 0 31.5265 0 26.625L0 8.875C0 3.97347 3.97347 0 8.875 0L38.4583 0C43.3599 0 47.3333 3.97347 47.3333 8.875L47.3333 26.625C47.3333 31.5265 43.3599 35.5 38.4583 35.5L32.5417 35.5L23.6667 44.375" transform="translate(8.363636 8.590909)" id="Path" fill="#A1ABCD" fill-opacity="0.349019617" stroke="none" />
+    <path d="M23.6667 44.375L14.7917 35.5L8.875 35.5C3.97347 35.5 0 31.5265 0 26.625L0 8.875C0 3.97347 3.97347 0 8.875 0L38.4583 0C43.3599 0 47.3333 3.97347 47.3333 8.875L47.3333 26.625C47.3333 31.5265 43.3599 35.5 38.4583 35.5L32.5417 35.5L23.6667 44.375" transform="translate(0.8333333 0.7916667)" id="Path" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 1.47917L23.6667 1.47917" transform="translate(12.66667 11.14583)" id="Path" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 1.47917L17.75 1.47917" transform="translate(12.66667 22.97917)" id="Path" fill="none" stroke="#202842" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
