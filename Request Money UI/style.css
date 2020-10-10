@@ -6,12 +6,13 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    /* outline: 1px solid pink; */
 }
 
 body {
     background: hsl(240, 12%, 97%);
     color: hsl(244, 46%, 7%);
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,14 +25,15 @@ a {
 .request-card {
     background: #fff;
     border-radius: 5px;
-    width: 98%;
+    box-shadow: 0 15px 36px -29px hsla(226, 77%, 27%, 0.203);
+    width: 95%;
     max-width: 1050px;
     margin: 9vh auto 0;
     padding: 4.8rem 7% 6.2rem;
 }
 
 .card-title h1 {
-    font-size: 1.55rem;
+    font-size: 1.58rem;
     margin-bottom: 2rem;
 }
 
@@ -66,16 +68,16 @@ a {
 
 .description-number p {
     display: inline-block;
-    font-size: .85rem;
-    -webkit-text-stroke: .6px hsl(244, 46%, 7%);
-    padding: .16rem .46rem;
+    font-size: 0.85rem;
+    -webkit-text-stroke: 0.6px hsl(244, 46%, 7%);
+    padding: 0.2rem 0.46rem;
     border: 1px solid rgb(26, 25, 41);
     border-radius: 50px;
-    margin-right: .7rem;
+    margin-right: 0.7rem;
 }
 
 .description-text p {
-    font-size: .82rem;
+    font-size: 0.82rem;
     max-width: 20ch;
     width: 100%;
 }
@@ -93,4 +95,49 @@ a {
     color: #fff;
     padding: 1rem 2.5rem;
     text-align: center;
+}
+
+.card-cta .btn:hover,
+.card-cta .btn:focus {
+    opacity: 0.8;
+}
+
+@media (max-width: 460px) {
+    .request-card {
+        margin: 1.3vh auto 0;
+        padding: 0.8rem 7% 3.7rem;
+    }
+
+    .card-title h1 {
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .card-sub_cards {
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-description p {
+        font-size: 0.9rem;
+        margin: 0 auto 2.2rem;
+    }
+
+    .sub-card+.sub-card {
+        margin-top: 1rem;
+    }
+
+    .sub-card_icon img {
+        width: 2.9rem;
+    }
+
+    .description-number p {
+        font-size: 0.7rem;
+        padding: 0.19rem 0.41rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 2.2rem;
+    }
 }
